@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/team.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+/*
+  注意： 图片大小：120x120px png
+  需要更新:
+  1. 最上方的图片是否需要
+  2. 团员的图片的更新
+  3. 团员每个人的一句话介绍
+  4. SNS的super链接，如果无链接，需要显示灰色
+*/
+
+
+
+
+.col-md-3-style{
+      background-color:white;
+      padding: 10px;
+      margin: 5px;
+      box-shadow: 1px 1px 1px #bdc3c7; /*阴影*/
+      border-radius: 10px; /*弧度*/
+      height:300px;
+      width: auto;
+      position: relative;
+      }
+.caption-Name > h3{
+  /* 名个人的英文名字 */
+  font-size: 18px;
+}
+.caption-Name > h3 > small{
+  /* 名个人的职位 */
+  color:#3498db;
+}
+.quote-style{
+  /* 引用字体的大小 */
+  font-size: 15px;
+}
+
+.list-inline-style {
+  /* 保持SNS ICON居中显示 */
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+
+.list-inline-style > li {
+  /* SNS ICON位置 */
+  display: inline-block;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+.fa-facebook-square, .fa-weixin, .fa-weibo{
+  /* fa-awsome icon 颜色*/
+  color: #34495e;
+}
+
+.expand-style{
+  position: absolute;
+  color:#7f8c8d;
+  left: 90%;
+  z-index: 20;
+  /*手机端显示有问题*/
+}
+
+.img-style{
+  position: relative;
+  z-index: 10;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">About
+                    <small>Subheading</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">About</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Intro Content img/team-all.jpg  -->
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-responsive" src="" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2>About US</h2>
+                <p>【七联】是一个大家庭，各种各样的兄弟姐妹们组成了这个团体。我们一起经历挫折，我们一同努力成长，我们彼此分享快乐，我们也学着坚守梦想。不管你现在是在图书馆里背着怎么也看不进去的英语单词，还是你现在迷茫地看不清未来的方向不知道要往哪走。 不管你现在是在努力着去实现梦想却没能拉近与梦想的距离，还是你已经慢慢地找不到自己的梦想了。 你都要去相信，没有到不了的明天。 正如乔布斯说的：“你的时间有限，所以不要为别人而活。不要被教条所限，不要活在别人的观念里。不要让别人的意见左右自己内心的声音。最重要的是，勇敢的去追随自己的心灵和直觉，只有自己的心灵和直觉才知道你自己的真实想法，其他一切都是次要。”</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- 团队成员介绍 -->
+            <!-- Service Panels -->
+            <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Services Panels</h2>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                          <img src="img/bruce.png" class="img-responsive">
+                          <h4>DavidBear<br>
+                              <small>Co-founder, Designer</small>
+                          </h4>                          
+                        </div>
+                        <div class="panel-body">
+                          <h4>DavidBear<br>
+                              <small>Co-founder, Designer</small>
+                          </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <span class="fa-stack fa-5x">
+                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                  <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="panel-body">
+                            <h4>Service Two</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <span class="fa-stack fa-5x">
+                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                  <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="panel-body">
+                            <h4>Service Three</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <span class="fa-stack fa-5x">
+                                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                  <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="panel-body">
+                            <h4>Service Four</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- Team Members -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Operation Team</h2>
+            </div>
+
+            <div class="col-md-3 col-md-offset-2 text-center">
+                <div class="col-md-3-style">
+                    <img class="img-responsive center-block" src="img/davidBear.png">
+                    <div class="caption-Name">
+                        <h3>DavidBear<br>
+                            <small>Co-founder, Designer</small>
+                        </h3>
+                        <blockquote class="quote-style">Keep running, keep smiling!</blockquote>
+                        <ul class="list-inline-style">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weixin fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weibo fa-fw"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <div class="col-md-3-style">
+                    <img class="img-responsive center-block" src="img/rene.png">
+                    <div class="caption-Name">
+                        <h3>Rennei<br>
+                            <small>Co-founder</small>
+                        </h3>
+                        <blockquote class="quote-style">我要一场说走就走的旅行!</blockquote>
+                        <ul class="list-inline-style">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weixin fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weibo fa-fw"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <div class="col-md-3-style">
+                    <img class="img-responsive center-block" src="img/clong.png">
+                    <div class="caption-Name">
+                        <h3>Clong<br>
+                            <small>CTO</small>
+                        </h3>
+                        <blockquote class="quote-style"> echo "Hello World!" </blockquote>
+                        <ul class="list-inline-style">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weixin fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weibo fa-fw"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div><!--end of row -->
+
+<hr>
+
+         <div class="row">
+             <div class="col-lg-12">
+                 <h2 class="page-header">IT Team</h2>
+             </div>
+
+            <div class="col-md-3 text-center">
+                <div class="col-md-3-style">
+                    <img class="img-responsive center-block" src="img/cheung.png">
+                    <div class="caption-Name">
+                        <h3>Cheung<br>
+                            <small>Events organizer</small>
+                        </h3>
+                        <blockquote class="quote-style">我其实是一只码农! </blockquote>
+                        <ul class="list-inline-style">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weixin fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weibo fa-fw"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <div class="col-md-3-style">
+                    <img class="img-responsive center-block" src="img/dongqiang.png">
+                    <div class="caption-Name">
+                        <h3>Qiang<br>
+                            <small>Web Developer</small>
+                        </h3>
+                        <blockquote class="quote-style">享受生活，我怕老婆!</blockquote>
+                        <ul class="list-inline-style">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weixin fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weibo fa-fw"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <div class="col-md-3-style">
+                    <img class="img-responsive center-block" src="img/Tianhui.png">
+                    <div class="caption-Name">
+                        <h3>Tianhui<br>
+                            <small>iOS Developer</small>
+                        </h3>
+                        <blockquote class="quote-style">最近比较烦，转职有点难</blockquote>
+                        <ul class="list-inline-style">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weixin fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weibo fa-fw"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <div class="col-md-3-style">
+                    <img class="img-responsive center-block" src="img/nily.png">
+                    <div class="caption-Name">
+                        <h3>Nily<br>
+                            <small>Web Designer</small>
+                        </h3>
+                        <blockquote class="quote-style">我要用魔法消灭你!</blockquote>
+                        <ul class="list-inline-style">
+                            <li><a href="#"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weixin fa-fw"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-2x fa-weibo fa-fw"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end ofrow -->
+
+        <hr>
+
+
+                 <div class="row">
+                     <div class="col-lg-12">
+                         <h2 class="page-header">Teachers Team</h2>
+                     </div>
+
+                    <div class="col-md-3 text-center">
+                        <div class="col-md-3-style">
+                            <span class="expand-style"><i class="fa fa-expand" data-toggle="modal" data-target="#teacherIntro"></i></span>
+                            <img class="img-responsive center-block img-style" src="img/cheung.png">
+                            <div class="caption-Name">
+                                <h3>Rob<br>
+                                    <small>Consultant</small>
+                                </h3>
+                                <blockquote class="quote-style">金融・証券・保険業界</blockquote>
+                                <ul class="list-inline-style">
+                                    <li><a href="#"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-2x fa-weixin fa-fw"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-2x fa-weibo fa-fw"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal for the first person -->
+                    <div class="modal fade" id="teacherIntro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">关于Rob</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col-md-6">
+                                  <img class="img-responsive" src="" alt="">
+                              </div>
+                              <div class="col-md-6">
+                              <p>
+                                Rob修士就读于庆应义塾大学大学院。在大学院期间，曾经经过学校推荐，参加荷兰代尔夫特工科大学的交换留学。也是因为这次交换留学，没有时间参加所谓的暑期实习，甚至自己人生第一场就职说明会也只能安排在12月底。但正是因为这种看起来起步晚，无正规实习经验的危机感，使自己更加努力，在3月26日拿到了第一家大手石油公司内定，并在4月初拿到了大手证券N社内定。Rob虽然担当金融部分的讲师，但对能源、化学、商社、海运、物流、咨询等业界也有深刻理解。更重要的是，Rob通过自己经验总结出来的3个月速度就活方法，能够帮助你迅速的找到就活的自我，就职的自我，以及未来的自我。
+                              </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- end of modal -->
+
+                    <div class="col-md-3 text-center">
+                        <div class="col-md-3-style">
+
+                            <img class="img-responsive center-block" src="img/dongqiang.png">
+                            <div class="caption-Name">
+                                <h3>Qiang<br>
+                                    <small>Web Developer</small>
+                                </h3>
+                                <blockquote class="quote-style">享受生活，我怕老婆!</blockquote>
+                                <ul class="list-inline-style">
+                                    <li><a href="#"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-2x fa-weixin fa-fw"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-2x fa-weibo fa-fw"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 text-center">
+                        <div class="col-md-3-style">
+                            <img class="img-responsive center-block" src="img/Tianhui.png">
+                            <div class="caption-Name">
+                                <h3>Tianhui<br>
+                                    <small>iOS Developer</small>
+                                </h3>
+                                <blockquote class="quote-style">最近比较烦，转职有点难</blockquote>
+                                <ul class="list-inline-style">
+                                    <li><a href="#"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-2x fa-weixin fa-fw"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-2x fa-weibo fa-fw"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 text-center">
+                        <div class="col-md-3-style">
+                            <img class="img-responsive center-block" src="img/nily.png">
+                            <div class="caption-Name">
+                                <h3>Nily<br>
+                                    <small>Web Designer</small>
+                                </h3>
+                                <blockquote class="quote-style">我要用魔法消灭你!</blockquote>
+                                <ul class="list-inline-style">
+                                    <li><a href="#"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-2x fa-weixin fa-fw"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-2x fa-weibo fa-fw"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end ofrow -->
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

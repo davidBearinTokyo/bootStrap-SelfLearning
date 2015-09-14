@@ -1,0 +1,8 @@
+body{
+    /*背景色与其他页面保持相同*/
+      background-color: #f1f4f9;
+    }
+
+.panel-default > .panel-heading{
+  background-color: #2ecc71;
+}
