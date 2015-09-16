@@ -23,10 +23,14 @@
     <!-- Custom Animate Css -->
     <link rel="stylesheet" href="animate.css/animate.min.css">
 
+    <!-- Back to top Css -->
+    <!-- 这个部分要集合到blog-list里面 -->
+    <link rel="stylesheet" href="css/backToTop.css">
+
     <!-- Count-down CSS -->
     <link href="countDown/flipclock.css" rel="stylesheet">
+
     <!-- Count-down JavaScript -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="countDown/flipclock.js"></script>
 
 
@@ -633,6 +637,11 @@
     </div>
     <!-- /.container -->
 
+    <p id="back-top">
+      <a href="#top"><span</span>Back to Top</a>
+    </p>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <!-- COUNTDOWN -->
     <script>
       var countDown;
@@ -656,6 +665,39 @@
 
       });
     </script>
+
+    <!-- Back to top -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+    	// hide #back-top first
+    	$("#back-top").hide();
+
+    	// fade in #back-top
+    	$(function () {
+    		$(window).scroll(function () {
+
+        	if ($(this).scrollTop() > 100) {
+    				$('#back-top').fadeIn();
+    			} else {
+    				$('#back-top').fadeOut();
+    			}
+    		});
+
+    		// scroll body to 0px on click
+    		$('#back-top').click(function () {
+    			$('body,html').animate({
+    				scrollTop: 0
+    			}, 800);
+    			return false;
+    		});
+    	});
+
+    });
+    </script>
+
+
 
 </body>
 
