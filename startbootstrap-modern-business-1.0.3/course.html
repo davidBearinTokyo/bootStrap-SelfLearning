@@ -23,6 +23,17 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <!-- LandingPage CSS -->
+    <link href='css/landingPage.css' rel='stylesheet' />
+
+    <!-- Calendar CSS & JS -->
+    <link href='css/calendarCSS/fullcalendar.css' rel='stylesheet' />
+    <link href='css/calendarCSS/fullcalendar.print.css' rel='stylesheet' media='print' />
+
+    <!-- FlexSlider CSS-->
+    <link href='css/flexslider.css' rel='stylesheet'/>
+
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,40 +42,6 @@
     <![endif]-->
 
 </head>
-
-<style>
-font-family: {
-  "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
-}
-body{
-    /*背景颜色*/
-    background-color: #ecf0f1;
-}
-
-.header-banner{
-  /*标题图片的定义*/
-  background-color: #2ecc71;
-  background-size: cover;
-  padding-top: 10%;
-  padding-bottom: 15%;
-  text-align: center;
-}
-.header-message {
-  position: relative;
-}
-.header-message > h1 {
-  /*标题文字*/
-  margin: 0;
-  font-size: 5em;
-  color: #204056;
-}
-p{
-  /*landing-page 文字的定义*/
-  color: rgba(28, 54, 83, 0.6);
-  line-height: 200%;
-}
-/*----- 头部定义完成 ------*/
-</style>
 
 <body>
 
@@ -79,73 +56,39 @@ p{
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">七联</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" >
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">About</a>
+                    <!-- <li data-menuanchor="TopView" class="active">
+                        <a href="#TopView">顶部</a>
+                    </li> -->
+                    <li data-menuanchor="Features">
+                        <a href="#Features">七联特色</a>
                     </li>
-                    <li class="active">
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                    <li class="dropdown" data-menuanchor="JobHunting">
+                        <a class="dropdown-toggle" data-toggle="dropdown">平台介绍<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            <li data-menuanchor="JobHunting">
+                                <a href="#JobHunting">七联就职</a>
                             </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            <li data-menuanchor="SharingPlatform">
+                                <a href="#SharingPlatform">分享平台</a>
                             </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            <li data-menuanchor="BusinessCorporation">
+                                <a href="#BusinessCorporation">商务合作</a>
                             </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            <li data-menuanchor="Calendar">
+                                <a href="#Calendar">所有活动</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
+                    <li data-menuanchor="News">
+                        <a href="#News">七联视界</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
+                    <li data-menuanchor="Login">
+                        <a href="#Login">加入七联</a>
                     </li>
                 </ul>
             </div>
@@ -154,912 +97,635 @@ p{
         <!-- /.container -->
     </nav>
 
-
-    <!-- Page Header -->
-    <div class="header-banner">
-      <div class="container-fluid">
-          <div class="col-md-12 header-message">
-            <h1>
-              SlideShow
-            </h1>
-          </div>
-      </div>
-    </div><!-- end of header -->
-
-    <!-- 开始的介绍 -->
-    <!--
-     1. 我们的团队
-     2. 我们合作的对象
-    -->
-
-    <style>
-      .intro-padding{
-        /*上下的距离，背景的颜色*/
-        background: #fff;
-        padding: 120px;
-      }
-      .intro-title{
-        /*service的标题*/
-        font-size: 20px;
-      }
-      .intro-section-padding{
-        /*每个服务之间的上下距离*/
-        padding: 20px;
-      }
-
-    </style>
-    <!-- 介绍一下七联目前的主要业务都有哪些-->
-    <div class="container-fluid intro-padding">
-      <div class="row">
-        <div class="col-md-4">
-            <div class="media intro-section-padding">
-                <div class="pull-left">
-                  <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x" style="color:#27ae60"></i>
-                    <i class="fa fa-suitcase fa-stack-1x fa-inverse"></i>
-                  </span>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">就职辅导</h4>
-                    <p>我们提供最牛的教师阵容，最全面的课程设置，帮助在日留学生规划职业道路，找到理想的工作。七联历届学员已超过500人次。2015年度，我们的学员攻克了日本xx家企业，共拿到xx个offer。
-                    </p>
-                </div>
-            </div>
-
-          </div>
-          <div class="col-md-4">
-              <div class="media intro-section-padding">
-                  <div class="pull-left">
-                    <span class="fa-stack fa-2x">
-                      <i class="fa fa-circle fa-stack-2x" style="color:#27ae60"></i>
-                      <i class="fa fa-area-chart fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </div>
-                  <div class="media-body">
-                      <h4 class="media-heading">商务合作</h4>
-                      <p>2015年通过七联平台进行推广和招聘的公司超过50家，其中包括中国最大的通信公司H社、四大会计师事务所（中国区）以及日本最大的留考机构000等。七联致力于成为中日之间人才输送的桥梁。
-                      </p>
-                  </div>
+      <!-- Page Header -->
+        <div class="header-banner" id="TopView">
+          <div class="container-fluid">
+              <div class="col-md-12 header-message">
+                <h1>
+                  联你我，启未来！
+                </h1>
+                <p style="color:white; font-size:20px; margin-top:40px;">
+                  七联是日本最大的职业发展支持平台, 致力于支援在日留学生就业，帮助在日华人提高职业技能。
+                </p>
               </div>
-            </div>
+              <div class="down-arrow floating-arrow"><a href="#Features"><i class="fa fa-angle-down"></i></a></div>
+          </div>
+        </div><!-- end of header -->
+
+      <!-- 介绍一下七联目前的主要业务都有哪些-->
+        <div class="container-fluid intro-padding" id="Features">
+          <div class="row">
+            <!-- 就职辅导 -->
             <div class="col-md-4">
                 <div class="media intro-section-padding">
                     <div class="pull-left">
                       <span class="fa-stack fa-2x">
                         <i class="fa fa-circle fa-stack-2x" style="color:#27ae60"></i>
-                        <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-suitcase fa-stack-1x fa-inverse"></i>
                       </span>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">学习交流</h4>
-                        <p>七联开展多种资格认证考试课程，帮助在日留学生提高专业技能，增强就职竞争力。此外，我们还不定期举办主题演讲，邀请各路大神分享他们对于各行各业的经验与心得，提供思想碰撞的平台。</p>
+                        <h4 class="media-heading">就职辅导</h4>
+                        <p>我们提供最牛的教师阵容，最全面的课程设置，帮助在日留学生规划职业道路，找到理想的工作。七联历届学员已超过500人次。2015年度，我们的学员攻克了日本xx家企业，共拿到xx个offer。
+                        </p>
                     </div>
                 </div>
-             </div>
-      </div>
-    </div>
+              </div>
+              <!-- 分享平台 -->
+              <div class="col-md-4">
+                  <div class="media intro-section-padding">
+                      <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                          <i class="fa fa-circle fa-stack-2x" style="color:#27ae60"></i>
+                          <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </div>
+                      <div class="media-body">
+                          <h4 class="media-heading">分享平台</h4>
+                          <p>七联开展多种资格认证考试课程，帮助大家开拓眼界、提高技能，增强竞争力。此外，我们还不定期举办主题演讲，邀请各路大神分享他们对于各行各业的经验与心得，促进大家在交流和分享中进步。七联提供这样一个思想碰撞的平台。</p>
+                      </div>
+                  </div>
+                </div>
+                <!-- 商务合作 -->
+                <div class="col-md-4">
+                    <div class="media intro-section-padding">
+                        <div class="pull-left">
+                          <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x" style="color:#27ae60"></i>
+                            <i class="fa fa-area-chart fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">商务合作</h4>
+                            <p>2015年通过七联平台进行推广和招聘的公司超过50家，其中包括中国最大的通信公司H社、四大会计师事务所（中国区）以及日本最大的留考机构000等。七联致力于成为中日之间人才输送的桥梁。
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+          </div> <!-- end of row -->
+        </div><!-- end of Features -->
 
-    <!-- 课程部分 -->
-    <style>
 
-      .course-section-layout{
-        display: block;
-        padding-top: 120px;
-        padding-bottom: 120px;
-      }
-
-      .course-heading{
-        display: block;
-        margin: 20px;
-      }
-      .course-heading-title{
-        font-size: 24px;
-      }
-      .course-section-padding{
-        /*每个描述性文字的上下距离*/
-        padding: 15px;
-      }
-      .course-panel-border{
-        /*block下端的颜色*/
-        border-bottom-width: 3px;
-        border-bottom-style: solid;
-      }
-      .course-panel-number{
-        /* 统计数字*/
-        font-size: 50px;
-        font-style: normal;
-        font-family: 'arial narrow';
-      }
-
-      .course-panel-title{
-        /*统计部分的标题*/
-        text-align:center;
-        padding-bottom: 70px;
-        margin-top: -50px;
-      }
-
-    </style>
-
-    <div class="container-fluid" style="background: url(img/course_bg.jpg) repeat center center;">
-      <div class="row course-section-layout">
-          <div class="col-lg-12 course-panel-title">
-            <h2> 七联・就职</h2>
-            <p>决定我们成为什么样的人，不是我们的能力，而是我们的选择</p>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-6">
-              <div class="panel panel-default text-center">
-                  <div class="panel-body course-panel-border" style="border-bottom-color: #39d179;">
-                      <h1 class="course-panel-number" style="color: #39d179;">55%</h1>
-                      <p>新生来自老生推荐</p>
+      <!-- 七联就职满意度调查-->
+        <div class="container-fluid" style="background: url(img/course_bg.jpg) repeat center center;" id="JobHunting">
+          <div class="row course-section-layout">
+              <!-- 大标题 -->
+              <div class="col-lg-12 course-panel-title">
+                <h2> 七联・就职</h2>
+                <p>决定我们成为什么样的人，不是我们的能力，而是我们的选择</p>
+              </div>
+              <!-- 新生来自老生推荐 -->
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                  <div class="panel panel-default text-center">
+                      <div class="panel-body course-panel-border" style="border-bottom-color: #39d179;">
+                          <h1 class="course-panel-number" style="color: #39d179;">55%</h1>
+                          <p>新生来自老生推荐</p>
+                      </div>
                   </div>
               </div>
-          </div>
-            <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="panel panel-default text-center">
-                  <div class="panel-body course-panel-border" style="border-bottom-color: #ea6153;">
-                      <h1 class="course-panel-number" style="color: #ea6153;">220+</h1>
-                      <p>我们的内定</p>
+              <!-- 我们的内定 -->
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-body course-panel-border" style="border-bottom-color: #ea6153;">
+                        <h1 class="course-panel-number" style="color: #ea6153;">220+</h1>
+                        <p>我们的内定</p>
+                    </div>
                   </div>
-                </div>
-            </div>
-          <div class="col-md-3 col-sm-6 col-xs-6">
-              <div class="panel panel-default text-center">
-                <div class="panel-body course-panel-border" style="border-bottom-color: #3498db;">
-                    <h1 class="course-panel-number" style="color: #3498db;">95%</h1>
-                    <p>课程满意度</p>
-                </div>
               </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-6 ">
-              <div class="panel panel-default text-center">
-                <div class="panel-body course-panel-border" style="border-bottom-color: #f1c40f;">
-                    <h1 class="course-panel-number" style="color: #f1c40f;">1000+</h1>
-                    <p>就职小伙伴</p>
-                </div>
+              <!-- 课程满意度 -->
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-body course-panel-border" style="border-bottom-color: #3498db;">
+                        <h1 class="course-panel-number" style="color: #3498db;">95%</h1>
+                        <p>课程满意度</p>
+                    </div>
+                  </div>
               </div>
-          </div>
-
-      </div><!-- end of row -->
-    </div><!-- end of container -->
-
-
-
-
-    <style>
-      .course-schedule-section-layout{
-        /*用来定义每一个课程板块之间的距离*/
-        margin-bottom: 15px;
-      }
-    </style>
-
-    <!-- 关于课程介绍 -->
-    <div class="container-fluid">
-      <div class="row" style="background-color:white">
-          <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-              <ul id="course-Tab" class="nav nav-tabs nav-justified">
-                  <li class="active"><a style="border:none" href="#service-industryInfo" data-toggle="tab"><h4>业界概览／天罗地网式</h4></a>
-                  </li>
-                  <li class=""><a style="border:none" href="#service-selflearning" data-toggle="tab"><h4>自我提升／左右互搏术</h4></a>
-                  </li>
-                  <li class=""><a style="border:none" href="#service-interview" data-toggle="tab"><h4>面试技巧／降龙十八掌</h4></a>
-                  </li>
-                  <li class=""><a style="border:none" href="#service-exercise" data-toggle="tab"><h4>实战演练／乾坤大挪移</h4></a>
-                  </li>
-              </ul><!-- end of service column -->
-
-              <div id="course-TabContent" class="tab-content">
-                  <div class="tab-pane fade active in" id="service-industryInfo">
-                      <p style="padding:20px;">
-                        日本有多少家公司？有多少外国人在日本就职？日本有哪些业界？它们都有什么特征？每个业界有哪些公司？哪些公司适合我？就职刚刚起步，种种问题接踵而至。而我们面临的最大的问题恐怕是信息过剩，无从下手。在七联就职课程中我们将带你俯瞰日本就职概况，系统分析金融、咨询、IT和MAKER四大业界的现状和未来，并推荐一些我们精挑细选的公司重点讲解。希望你可以用天罗地网将铺天盖地的信息尽收囊中，从此告别两眼一抹黑。
-                      </p>
-                      <div class="row course-contents">
-                      <!-- 具体业界分析课程 -->
-                          <div class="col-md-3 col-sm-6">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading" style="padding:0px;">
-                                    <img src="img/course_img_temp.png" class="img-responsive">
-                                  </div>
-                                  <div class="panel-body">
-                                      <p style="text-align:left">2小时咨询业界详解 <br>
-                                        <small>by Vivian / 咨询业界M社</small>
-                                      </p>
-                                      <p style="text-align:left">
-                                        <i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star"></i> <span style="margin-left:5px;">350 reviews</span>
-                                      </p>
-                                  </div>
-                                  <div class="panel-footer" style="text-align:left; font-size:15px;">
-                                    <i class="fa fa-users"></i> 25位同学
-                                    <span style="float:right;">
-                                      5000¥ / 2h
-                                    </span>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                          <div class="col-md-3 col-sm-6">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>IT业界对策</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                          <div class="col-md-3 col-sm-6">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>Maker业界对策</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                          <div class="col-md-3 col-sm-6">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>金融业界对策</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                      </div><!-- 具体课程部分结束 -->
-                  </div><!-- 业界研究结束 -->
-
-                  <div class="tab-pane fade" id="service-selflearning">
-                      <p style="padding:20px;">在日本就职，我们的对手是目标公司，也是我们自己。在了解公司的同时，更要了解自己，切忌迷失自我。这一左一右的博弈，若是没有运用得当，恐怕事倍功半，若能相辅相成，方可威力倍增。我们的自我分析课程将告诉你如何有效且准确地定位自我并认清目标；通过ES课程我们将教你如何用文字升华自身特征，让你的简历与众不同；另外，我们还将帮助你快速掌握技巧，提升自身能力，轻松应对web test。七联将和你一同认识、提升、突破自我，左右兼顾，不留遗憾。</p>
-                      <div class="row course-contents">
-                      <!-- 具体业界分析课程 -->
-                          <div class="col-md-3 col-sm-6">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>就职概况分析</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                          <div class="col-md-3 col-sm-6 center-block">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>自我分析</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                          <div class="col-md-3 col-sm-6">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>ES对策课程</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                      </div><!-- 具体课程部分结束 -->
+              <!-- 就职小伙伴 -->
+              <div class="col-md-3 col-sm-6 col-xs-6 ">
+                  <div class="panel panel-default text-center">
+                    <div class="panel-body course-panel-border" style="border-bottom-color: #f1c40f;">
+                        <h1 class="course-panel-number" style="color: #f1c40f;">1000+</h1>
+                        <p>就职小伙伴</p>
+                    </div>
                   </div>
-                  <div class="tab-pane fade" id="service-interview">
-                      <p style="padding:20px;">
-                        在通过ES，Web Test的重重阻碍后，终于到达面试这一步。而踏入面试会场时，我们往往会觉得变数太多，过不过全是命。面试有没有运气的成分？有。但面试是不是仅凭运气？不是。面试的种类繁多，小组讨论、集团面试、个人面试，N v 1, 1 v N，N v N，面试官形态各异，笑面虎、死鱼眼、萌妹子、怪大叔。而我们的面试课程将传授你多种应对招数，兵来将挡，水来土掩，终能降龙伏虎。让你在这个动不动就谈命运的时代，谈一谈实力。
-                      </p>
-                      <div class="row course-contents">
-                      <!-- 具体业界分析课程 -->
-                          <div class="col-md-3 col-sm-6">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
+              </div>
+          </div><!-- end of row -->
+        </div><!-- end of 七联就职满意度调查 -->
 
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>个人面试对策</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                          <div class="col-md-3 col-sm-6 center-block">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>集团 / GD面试对策</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                          <div class="col-md-3 col-sm-6">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>フェルミ推定</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                      </div><!-- 具体课程部分结束 -->
-
-                  </div>
-                  <div class="tab-pane fade" id="service-exercise">
-                      <p style="padding:20px;">
-                        一切准备就绪，壮士就要远行？慢。风萧萧兮易水寒，但壮士不能一去不还，所以让我们先来试个水。进入面试环节的公司多多少少我们对它都抱有一定的幻想，白白浪费机会实在太可惜。为了让大家在实际面试中有更好的发挥，七联将提供一个模拟面试的平台，邀请就职前辈和社会人来帮助你模拟实战，并即时作出辛辣点评，让你积累宝贵的面试经验。在模拟训练中你或许会叹气，会留下怨气，但这些都将转化成在实际面试中的力气，在真正的战场上挥洒自如。
-                      </p>
-                      <div class="row course-contents">
-                      <!-- 具体业界分析课程 -->
-                          <div class="col-md-3 col-sm-6">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>模拟面试</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                          <div class="col-md-3 col-sm-6 center-block">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>模拟面试</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                          <div class="col-md-3 col-sm-6">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>模拟面试</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                          <div class="col-md-3 col-sm-6">
-                              <div class="panel panel-default text-center">
-                                  <div class="panel-heading">
-                                      <span class="fa-stack fa-5x">
-                                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                                      </span>
-
-                                  </div>
-                                  <div class="panel-body">
-                                      <h4>模拟面试</h4>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                      <a href="#" class="btn btn-primary">Learn More</a>
-                                  </div>
-                              </div>
-                          </div><!-- end of row -->
-                  </div>
-              </div><!-- end of servic tab -->
-          </div><!--服务介绍的部分结束-->
-        </div><!-- end of row 就职介绍部分结束-->
-    </div>
-  <div>
-
-    <div class="container-fluid">
-      <!-- 商务合作 -->
-      <div class="row course-section-layout">
-        <div class="col-md-4 col-md-offset-1">
-            <!-- 课程介绍文字 -->
-            <div class="col-lg-12">
-              <h3 class="media-heading">商务合作</h3>
-              <p>这2015年通过七联平台进行推广和招聘的公司超过50家，其中包括中国最大的通信公司H社、四大会计师事务所（中国区）以及日本最大的留考机构000等。七联致力于成为中日之间人才输送的桥梁。</p>
-            </div>
-            <div class="col-md-offset-4">
-              <a href="http://www.qilian.jp/news" class="btn btn-success btn-more-news">Learn More</a>
-            </div>
-        </div>
-        <div class="col-md-6 col-offset-md-2">
-          <!-- image here -->
-            <div class="col-md-10">
-              <img class="course-img" src="img/macbook-pro.png" class="img-responsive">
-            </div>
-        </div>
-      </div><!-- end of row -->
-    </div><!-- end of 商务合作 -->
-
-    <div class="container-fluid" style="background-color:white;">
-      <!-- 学习交流 -->
-    <div class="row course-section-layout">
-        <div class="col-md-6">
-          <!-- image here -->
-            <div class="col-md-10">
-              <img class="course-img" src="img/intern.png" class="img-responsive">
-            </div>
-        </div>
-        <div class="col-md-4">
-            <!-- 课程介绍文字 -->
-            <div class="col-lg-12">
-            <h3 class="media-heading">学习交流</h3>
-            <p>这里总会有生生不息的希望和不期而遇的温暖</p>
-            </div>
-            <div class="media course-section-padding">
-                <div class="pull-left">
-                  <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x" style="color:#27ae60"></i>
-                    <i class="fa fa-suitcase fa-stack-1x fa-inverse"></i>
-                  </span>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">Keynote Speech</h4>
-                    <p>超过300人以上的社会人资源；超过150人以上的15卒内定成员；超过500人以上的16卒就职生；超过100人以上的17卒实习生。
-                    </p>
-                </div>
-            </div>
-            <div class="media course-section-padding">
-                <div class="pull-left">
-                  <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x" style="color:#27ae60"></i>
-                    <i class="fa fa-suitcase fa-stack-1x fa-inverse"></i>
-                  </span>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">资格课程</h4>
-                    <p>一个月四大业界，就职所有环节深度剖析；来自大手公司前辈的演讲；真正了解职场生态圈；模拟面试让你体验真实残酷的面试环境。
-                    </p>
-                </div>
-            </div>
-            <div class="media course-section-padding">
-                <div class="pull-left">
-                  <span class="fa-stack fa-2x">
-                    <i class="fa fa-circle fa-stack-2x" style="color:#27ae60"></i>
-                    <i class="fa fa-suitcase fa-stack-1x fa-inverse"></i>
-                  </span>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">七联生活</h4>
-                    <p>12位老师，各具特点，独领风骚。没有哪位老师可以覆盖所有业界，但是每一位在自己的领域却是绝对的出类拔萃。除此之外，美女猎头和帅哥HR的加入也让就职战争变成了一场甜蜜的饕餮盛宴
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-offset-4">
-              <a href="http://www.qilian.jp/news" class="btn btn-success btn-more-news">Learn More</a>
-            </div>
-        </div>
-      </div><!-- end of row -->
-    </div><!-- end of 学习活动 -->
-
-
-    <!-- 资讯设计部分 -->
-    <style>
-      .news-section-cover{
-        /**/
-        background: url(img/news_header_img_2.jpg) no-repeat center center;
-        background-size: cover;
-        padding-top: 12%;
-        padding-bottom: 12%;
-      }
-      .event-cover-style{
-        /*figure will cross the whole column, which means ignore the padding*/
-        box-sizing: border-box;
-        overflow: hidden;
-        position: relative;
-        z-index: 0;
-      }
-      .news-description-article{
-        margin: 50px;
-        padding: 20px;
-      }
-      .news-description-words{
-        /*news介绍部分的字体*/
-        font-size: 15px;
-        text-align: center;
-      }
-      .news-title-align{
-        /*类别，标题的居中*/
-        text-align: center;
-      }
-      .news-category{
-        /*推荐文章类别*/
-        font-size: 13px;
-        color:#27ae60;
-      }
-      .news-title{
-        /*推荐文章标题*/
-        font-size: 17px;
-      }
-      .btn-more-news{
-        /*点击进入 news 网页*/
-        margin-top: 30px;
-        padding: 8px 60px;
-        font-size: 13px;
-        border: solid 2px;
-        border-radius: 40px;
-        text-transform: uppercase;
-      }
-      .btn-more-padding-news{
-        /*点击进入 news 网页*/
-        margin-top: 10px;
-        padding: 8px 60px;
-        font-size: 13px;
-        border: solid 2px;
-        border-radius: 40px;
-        text-transform: uppercase;
-      }
-    </style>
-
+      <!-- 关于课程介绍 -->
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 news-section-cover">
-            <!-- cover 图片 -->
+        <div class="row" style="background-color:white">
+            <!-- 课程介绍Panel -->
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+                <ul id="course-Tab" class="nav nav-tabs nav-justified">
+                    <li class="active"><a style="border:none" href="#service-industryInfo" data-toggle="tab"><h4>业界概览／天罗地网式</h4></a>
+                    </li>
+                    <li class=""><a style="border:none" href="#service-selflearning" data-toggle="tab"><h4>自我提升／左右互搏术</h4></a>
+                    </li>
+                    <li class=""><a style="border:none" href="#service-interview" data-toggle="tab"><h4>面试技巧／降龙十八掌</h4></a>
+                    </li>
+                    <li class=""><a style="border:none" href="#service-exercise" data-toggle="tab"><h4>实战演练／乾坤大挪移</h4></a>
+                    </li>
+                </ul><!-- end of service column -->
+
+                <!-- Tab Parts -->
+                <div id="course-TabContent" class="tab-content">
+                    <!-- 业界概览／天罗地网式 -->
+                    <div class="tab-pane fade active in" id="service-industryInfo">
+                        <p style="padding:20px;">
+                          日本有多少家公司？有多少外国人在日本就职？日本有哪些业界？它们都有什么特征？每个业界有哪些公司？哪些公司适合我？就职刚刚起步，种种问题接踵而至。而我们面临的最大的问题恐怕是信息过剩，无从下手。在七联就职课程中我们将带你俯瞰日本就职概况，系统分析金融、咨询、IT和MAKER四大业界的现状和未来，并推荐一些我们精挑细选的公司重点讲解。希望你可以用天罗地网将铺天盖地的信息尽收囊中，从此告别两眼一抹黑。
+                        </p>
+                        <div class="row course-contents">
+                        <!-- 具体业界分析课程 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading" style="padding:0px;">
+                                      <img src="img/course_img_temp.png" class="img-responsive">
+                                    </div>
+                                    <div class="panel-body">
+                                        <p style="text-align:left">2小时咨询业界详解 <br>
+                                          <small>by Vivian / 咨询业界M社</small>
+                                        </p>
+                                        <p style="text-align:left">
+                                          <i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star"></i> <span style="margin-left:5px;">350 reviews</span>
+                                        </p>
+                                    </div>
+                                    <div class="panel-footer" style="text-align:left; font-size:15px;">
+                                      <i class="fa fa-users"></i> 25位同学
+                                      <span style="float:right;">
+                                        5000¥ / 2h
+                                      </span>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>IT业界对策</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>Maker业界对策</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>金融业界对策</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                        </div><!-- 具体课程部分结束 -->
+                    </div><!-- 业界研究结束 -->
+
+                    <!-- 自我提升／左右互搏术 -->
+                    <div class="tab-pane fade" id="service-selflearning">
+                        <p style="padding:20px;">在日本就职，我们的对手是目标公司，也是我们自己。在了解公司的同时，更要了解自己，切忌迷失自我。这一左一右的博弈，若是没有运用得当，恐怕事倍功半，若能相辅相成，方可威力倍增。我们的自我分析课程将告诉你如何有效且准确地定位自我并认清目标；通过ES课程我们将教你如何用文字升华自身特征，让你的简历与众不同；另外，我们还将帮助你快速掌握技巧，提升自身能力，轻松应对web test。七联将和你一同认识、提升、突破自我，左右兼顾，不留遗憾。</p>
+                        <div class="row course-contents">
+                        <!-- 具体业界分析课程 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>就职概况分析</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                            <div class="col-md-3 col-sm-6 center-block">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>自我分析</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>ES对策课程</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                        </div><!-- 具体课程部分结束 -->
+                    </div>
+
+                    <!-- 面试技巧／降龙十八掌 -->
+                    <div class="tab-pane fade" id="service-interview">
+                        <p style="padding:20px;">
+                          在通过ES，Web Test的重重阻碍后，终于到达面试这一步。而踏入面试会场时，我们往往会觉得变数太多，过不过全是命。面试有没有运气的成分？有。但面试是不是仅凭运气？不是。面试的种类繁多，小组讨论、集团面试、个人面试，N v 1, 1 v N，N v N，面试官形态各异，笑面虎、死鱼眼、萌妹子、怪大叔。而我们的面试课程将传授你多种应对招数，兵来将挡，水来土掩，终能降龙伏虎。让你在这个动不动就谈命运的时代，谈一谈实力。
+                        </p>
+                        <div class="row course-contents">
+                        <!-- 具体业界分析课程 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>个人面试对策</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                            <div class="col-md-3 col-sm-6 center-block">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>集团 / GD面试对策</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>フェルミ推定</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                        </div><!-- 具体课程部分结束 -->
+
+                    </div><!-- end of 面试技巧-->
+
+                    <!-- 实战演练／乾坤大挪移 -->
+                    <div class="tab-pane fade" id="service-exercise">
+                        <p style="padding:20px;">
+                          一切准备就绪，壮士就要远行？慢。风萧萧兮易水寒，但壮士不能一去不还，所以让我们先来试个水。进入面试环节的公司多多少少我们对它都抱有一定的幻想，白白浪费机会实在太可惜。为了让大家在实际面试中有更好的发挥，七联将提供一个模拟面试的平台，邀请就职前辈和社会人来帮助你模拟实战，并即时作出辛辣点评，让你积累宝贵的面试经验。在模拟训练中你或许会叹气，会留下怨气，但这些都将转化成在实际面试中的力气，在真正的战场上挥洒自如。
+                        </p>
+                        <div class="row course-contents">
+                        <!-- 具体业界分析课程 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>模拟面试</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                            <div class="col-md-3 col-sm-6 center-block">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>模拟面试</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>模拟面试</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default text-center">
+                                    <div class="panel-heading">
+                                        <span class="fa-stack fa-5x">
+                                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                                        </span>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <h4>模拟面试</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div><!-- end of row -->
+                        </div>
+                    </div>
+
+                </div><!-- end of servic tab -->
+            </div><!--服务介绍的部分结束-->
+          </div><!-- end of row 就职介绍部分结束-->
+      </div>
+
+      <!-- 分享平台 -->
+      <div class="container-fluid" id="SharingPlatform">
+        <div class="row course-section-layout">
+          <!-- 左侧介绍文字 -->
+          <div class="col-md-4 col-md-offset-1">
+              <div class="col-lg-12">
+                <h3 class="media-heading">分享平台</h3>
+                <p>
+                  三人行，必有我师焉。人与人的交流，就是择其善者加以学习，则其不善的地方加以屏蔽的过程。在这里，谁都可以是听众，谁也都可以是讲述者。我们提供这样一个分享交流的平台，让你来听听别人的经历，也请你来谈谈自己的看法，我们可以抱膝长谈，我们也可以慷慨陈词。在思想碰撞的过程中，也许改变自己、改变他人、改变世界的火花就会涌现。谁都不是一座岛屿，自成一体，每个人都是广袤大地的一部分。
+                </p>
+              </div>
+              <div>
+                <a href="http://www.qilian.jp/news" class="btn btn-success btn-more-LearnMore">Learn More</a>
+              </div>
+          </div>
+          <!-- 右侧课程图片 -->
+          <div class="col-md-5 col-md-offset-1">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <img src="img/SharingPlatform/sharingPlatform_2.jpg" />
+                    </li>
+                    <li>
+                      <img src="img/SharingPlatform/sharingPlatform_3.jpg" />
+                    </li>
+                    <li>
+                      <img src="img/SharingPlatform/sharingPlatform_4.jpg" />
+                    </li>
+                  </ul>
+                </div>
           </div>
 
         </div><!-- end of row -->
-        <div class="row news-description-article">
-            <div class="col-md-6 col-md-offset-3">
-              <h2 style="text-align:center; padding:10px; font-size:24px;">我们</h2>
-              <div class="media">
-                <div class="media-body">
-                    <p class="news-description-words">
-                      我们工作，也许不一定能过上理想的生活，但我们至少不要过我们不想过的生活<br>
-                      我们生活，也许梦想正在走远，但我们奋斗的地方始终是一座希望之城<br>
-                      我们奋斗，也许不因为我们爱奋斗，而是爱正在因奋斗而发光的自己<br>
-                      是一线之隔还是一线曙光，全在你自己<br>
-                      七联视界，带你看世界，带你找自己<br>
-                    </p>
+      </div><!-- end of 分享平台 -->
+
+      <!-- 商务合作 -->
+      <div class="container-fluid" id="BusinessCorporation">
+
+        <div class="row course-section-layout" style="background-color:white">
+
+          <!-- 左侧文字 -->
+          <div class="col-md-6 col-md-offset-1">
+
+              <div class="col-md-12">
+                <img class="img-responsive" src="img/coorperation.png" class="img-responsive" style="max-width: 60%; margin-top:-30px">
+              </div>
+          </div>
+
+          <!-- 右侧文字 -->
+          <div class="col-md-4">
+              <div class="col-lg-12">
+                <h3 class="media-heading">商务合作</h3>
+                <p>
+                  2015年通过七联平台进行推广和招聘的公司超过50家，其中包括中国最大的通信公司H社、四大会计师事务所（中国区）以及日本最大的留考机构等。七联致力于成为中日之间人才输送的桥梁。
+                </p>
+              </div>
+              <div>
+                <a href="http://www.qilian.jp/news" class="btn btn-success btn-more-LearnMore">Learn More</a>
+              </div>
+          </div>
+
+        </div><!-- end of row -->
+      </div><!-- end of 商务合作 -->
+
+      <!-- 日历 -->
+      <div class="container-fluid" id="Calendar">
+        <div class="row course-section-layout">
+          <!-- 左侧文字 -->
+          <div class="col-md-4 col-md-offset-1">
+              <div class="col-lg-12">
+                <h3 class="media-heading">和我们一起成长</h3>
+                <p>
+                  这里是一间阅读室，一家咖啡厅，一个游乐园。 这里不仅有你熟悉的朋友，更有未知的领域等待你来探索。七联和你都还年轻，我们会不断遇见更好的彼此，将来的我们也一定会感激现在努力成长的自己。
+                </p>
+              </div>
+              <div>
+                <a href="http://www.qilian.jp/news" class="btn btn-success btn-more-LearnMore">Learn More</a>
+              </div>
+          </div>
+          <!-- 右侧日历 -->
+          <div class="col-md-5 col-md-offset-1">
+            <div class="col-md-12">
+              <div id='calendar'></div>
+            </div>
+          </div>
+        </div><!-- end of row -->
+      </div><!-- end of 日历 -->
+
+        <!-- 七联视界 -->
+        <div class="container-fluid news-section-layout" id="News">
+          <!-- News标题部分 -->
+          <div class="row news-description-article">
+              <div class="col-md-6 col-md-offset-3">
+                <h2 style="text-align:center; padding:10px; ">七联・视界</h2>
+                <div class="media">
+                  <div class="media-body">
+                      <p class="news-description-words">
+                        我们工作，也许不一定能过上理想的生活，但我们至少不要过我们不想过的生活<br>
+                        我们生活，也许梦想正在走远，但我们奋斗的地方始终是一座希望之城<br>
+                        我们奋斗，也许不因为我们爱奋斗，而是爱正在因奋斗而发光的自己<br>
+                        七联视界，带你看世界，带你找自己
+                        <br>
+                      </p>
+                    </div>
                   </div>
                 </div>
+          </div><!-- end of description-->
+
+          <!-- 文章列表 -->
+          <div class="row news-title-align">
+            <div class="col-md-4 event-cover-style">
+              <a href="#"><img src="img/news-detail-image-20150821.jpg" class="img-responsive img-thumbnail"></a>
+              <h2><a href="#" class="news-category">就职经历</a></h2>
+              <p><a href="#" class="news-title">东京就职记</a></p>
+            </div>
+            <div class="col-md-4 event-cover-style">
+              <a href="#"><img src="img/news_detail_column_4account.jpg" class="img-responsive img-thumbnail"></a>
+              <h2><a href="#" class="news-category" data-toggle="tooltip" data-placement="top" data-original-title="See more posts">就职情报</a></h2>
+              <p><a href="#" class="news-title">四大喜欢什么样的人?</i></a></p>
+            </div>
+            <div class="col-md-4 event-cover-style">
+              <a href="#"><img src="img/news_detail_column_Shousha.jpg" class="img-responsive img-thumbnail"></a>
+              <h2><a href="#" class="news-category" data-toggle="tooltip" data-placement="top" data-original-title="See more posts">业界研究</a></h2>
+              <p><a href="#" class="news-title">业界研究之商社</a></i></a></p>
+            </div>
+            <a href="http://www.qilian.jp/news" class="btn btn-danger btn-more-LearnMore">More news</a>
+          </div><!-- end of row -->
+
+        </div><!-- end of news container -->
+
+        <!-- 注册 & 登陆-->
+        <div class="container-fluid login-section-layout" id="Login">
+            <!-- 标题党-->
+            <div class="row login-title">
+              <div class="col-md-6 col-md-offset-3">
+                <h2 style="text-align:center;">现在开始，加入七联大家庭</h2>
+                <p>有生之年，一起去看看这个美丽易碎的世界吧！</p>
               </div>
-        </div><!-- end of description-->
-
-        <div class="row news-title-align"><!-- 推荐文章 -->
-          <div class="col-md-4 event-cover-style">
-            <a href="#"><img src="img/news-detail-image-20150821.jpg" class="img-responsive img-thumbnail"></a>
-            <h2><a href="#" class="news-category">就职经历</a></h2>
-            <p><a href="#" class="news-title">东京就职记 <i class="fa fa-angle-right"></i></a></p>
-          </div>
-          <div class="col-md-4 event-cover-style">
-            <a href="#"><img src="img/news_detail_column_4account.jpg" class="img-responsive img-thumbnail"></a>
-            <h2><a href="#" class="news-category" data-toggle="tooltip" data-placement="top" data-original-title="See more posts">就职情报</a></h2>
-            <p><a href="#" class="news-title">四大喜欢什么样的人?  <i class="fa fa-angle-right"></i></a></p>
-          </div>
-          <div class="col-md-4 event-cover-style">
-            <a href="#"><img src="img/news_detail_column_Shousha.jpg" class="img-responsive img-thumbnail"></a>
-            <h2><a href="#" class="news-category" data-toggle="tooltip" data-placement="top" data-original-title="See more posts">业界研究</a></h2>
-            <p><a href="#" class="news-title">业界研究之商社</a> <i class="fa fa-angle-right"></i></a></p>
-          </div>
-          <a href="http://www.qilian.jp/news" class="btn btn-danger btn-more-news">More news</a>
-        </div><!-- end of row -->
-
-      </div><!-- end of container -->
-
-<hr>
-
-
-
-
-
-
-
-
-    <div class="container">
-        <!-- Service Panels -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Services Panels</h2>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span>
 
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service One</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="panel-body">
-                        <h4>Service Four</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Service Tabs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Service Tabs</h2>
-            </div>
-            <div class="col-lg-12">
-
-                <ul id="myTab" class="nav nav-tabs nav-justified">
-                    <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Service One</a>
-                    </li>
-                    <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> Service Two</a>
-                    </li>
-                    <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Service Three</a>
-                    </li>
-                    <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-database"></i> Service Four</a>
-                    </li>
-                </ul>
-
-                <div id="myTabContent" class="tab-content">
-                    <div class="tab-pane fade active in" id="service-one">
-                        <h4>Service OneDavid</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
-                    <div class="tab-pane fade" id="service-two">
-                        <h4>Service Two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
-                    <div class="tab-pane fade" id="service-three">
-                        <h4>Service Three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
-                    <div class="tab-pane fade" id="service-four">
-                        <h4>Service Four</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Service List -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Service List</h2>
-            </div>
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service One</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Four</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-bomb fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Five</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-bank fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Six</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Seven</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-space-shuttle fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Eight</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-                <div class="media">
-                    <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-recycle fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Service Nine</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
+            <!-- slide + 内容-->
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
+              <!-- 左侧的slideshow -->
+              <div class="col-md-5 col-xs-10 col-xs-offset-1">
+                <!-- image here -->
+                  <div class="col-md-10">
+                    <div class="flexslider">
+                      <ul class="slides">
+                        <li>
+                          <img class="img-responsive" alt="Responsive image" src="img/register_left_img.png"  style="margin-top:-40px">
+                        </li>
+                        <li>
+                          <img class="img-responsive" alt="Responsive image" src="img/register_left_img_2.png" style="margin-top:-40px"/>
+                        </li>
+                        <li>
+                          <img class="img-responsive" alt="Responsive image" src="img/register_left_img_3.png" style="margin-top:-40px"/>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
 
-    </div>
-    <!-- /.container -->
+              <!-- 注册 & 登陆 -->
+              <div class="col-md-4 col-xs-12">
+                <form action="#" method="post" role="form">
+                  <div class="form-group form-group-lg"><!-- Email -->
+                    <div class="input-group has-feedback">
+                      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                      <input type="text" class="form-control" placeholder="电子邮件">
+                    </div>
+                  </div>
+                  <div class="form-group form-group-lg"><!-- Password -->
+                    <div class="input-group has-feedback">
+                      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <input type="password" class="form-control" id="#" aria-describedby="inputGroupSuccess1Status" placeholder="密码">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-success btn-block btn-lg">让我们开始吧！</button>
+                  <hr>
+                  <h5 style="text-align:center">或者直接登陆</h5>
+                  <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                      <button type="submit" class="btn btn-danger"><i class="fa fa-google"></i></button>
+                    </div>
+                    <div class="btn-group" role="group">
+                      <button type="submit" class="btn btn-primary"><i class="fa fa-facebook"></i></button>
+                    </div>
+                  </div>
+                </form><!-- end of 注册 -->
+              </div>
+
+            </div> <!-- end of slide + 内容-->
+        </div><!-- end of 注册 & 登陆-->
+
+          <!-- Footer -->
+          <footer class="footer-layout">
+              <div class="container footer-container-layout">
+                  <div class="row">
+                      <div class="col-md-7">
+                          <div class="footer-links">
+                              <ul class="footer-group">
+                                  <li><a href="#" class="footer-sitemap">回到顶部</a></li>
+                                  <li><a href="#"  class="footer-sitemap">课程平台</a></li>
+                                  <li><a href="#"  class="footer-sitemap">求人情报</a></li>
+                                  <li><a href="http://www.qilian.jp/news" class="footer-sitemap">七联视界</a></li>
+                                  <li><a href="http://www.qilian.jp/about" class="footer-sitemap">关于我们</a></li>
+                                  <li><a href="http://www.qilian.jp/blog" class="footer-sitemap">博客</a></li>
+                              </ul>
+                              <p style="color:white">Copyright © 2012-2015 七联 All Rights Reserved.
+                          </div>
+                      </div>
+                      <div class="col-md-4 col-md-offset-1">
+                          <p style="color:white">关注七联，和我们一起震撼世界</p>
+                          <a href="https://www.facebook.com/qilian" class="facebook-share"><i class="fa fa-facebook"></i></a>
+                          <a href="http://weibo.com/naanren" class="weibo-share"><i class="fa fa-weibo"></i></a>
+                          <a href="http://qilian.jp/news/" class="weixin-share"><i class="fa fa-weixin"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+          <!-- end of footer -->
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -1067,6 +733,83 @@ p{
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-</body>
+    <!-- Calendar JS -->
+    <script src='js/calendarJS/moment.min.js'></script>
+    <script src='js/calendarJS/jquery.min.js'></script>
+    <script src='js/calendarJS/fullcalendar.min.js'></script>
+    <script>
+    	$(document).ready(function() {
+    		$('#calendar').fullCalendar({
+    			header: {
+    				left: 'prev',
+    				center: 'title',
+    				right: 'next'
+    			},
+    			defaultDate: '2015-10-01',
+    			editable: true,
+    			eventLimit: true, // allow "more" link when too many events
+    			events: [
+    				{
+              id: 1,
+    					title: '七联恳亲会',
+              url: 'http://qilian.jp/party',
+    					start: '2015-10-10T18:00:00',
+    					end: '2015-10-10T22:00:00'
+    				},
+            {
+              id: 2,
+    					title: '簿記３級授業「⑦」',
+              url: 'http://qilian.jp/party',
+    					start: '2015-10-10T15:00:00',
+    					end: '2015-10-10T18:00:00'
+    				},
+            {
+              id: 3,
+    					title: '外资就职宣讲会',
+    					start: '2015-10-17T10:00:00',
+    					end: '2015-10-17T12:00:00'
+    				}
+    			]
+    		});
+    	});
+    </script>
 
+    <!-- FLexSlider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+        $('.flexslider').flexslider();
+        });
+    </script>
+
+    <!-- jQuery.jsの読み込み -->
+
+    <!-- スムーズスクロール部分の記述 -->
+    <script>
+    $(function(){
+       // #で始まるアンカーをクリックした場合に処理
+         $('a[href^=#]').click(function() {
+            // スクロールの速度
+            var speed = 600; // ミリ秒
+            // アンカーの値取得
+            var href= $(this).attr("href");
+
+            if (href=="#service-industryInfo" || href=="#service-selflearning" || href=="#service-interview" || href=="#service-exercise") {
+                // 为了去掉这几个tab时候使用的anchor
+            }
+            else{
+            // 移動先を取得
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            // 移動先を数値で取得
+            var position = target.offset().top;
+            // スムーススクロール
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;}
+         });
+    });
+    </script>
+
+
+
+</body>
 </html>
