@@ -114,20 +114,17 @@
       border-top: 1px solid #34495e;
       */
       padding: 0px;
+      padding-bottom: 40px;
     }
 
     .col-md-8 > .col-md-12{
       /* 图片占据整个空间，所以设定padding=0px */
       padding: 0px;
     }
-    .col-md-8 > .col-md-11 > h6{
-      /* 网站主体*/
-      /* 文章中显示发布时间的color */
-      color: #bdc3c7;
-    }
+
     .col-md-8 > .col-md-11{
       /* 消息 */
-      padding:25px; /* 20px的目标是把event图片和文本之间的距离控制好 */
+      padding:20px; /* 20px的目标是把event图片和文本之间的距离控制好 */
       padding-bottom: 40px;
       border-bottom: 1px solid #ecf0f1;
       }
@@ -388,31 +385,49 @@
 
 
     <!-- Page Content -->
+    <style>
+      .fa-star{
+        color: #f1c40f;
+      }
+      .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+        background-color: rgba(26, 188, 156, 0.1);
+      }
+      a:visited{
+        background-color: rgba(46, 204, 113,0.6);
+      }
+      /* vertical-align*/
+      .table tbody>tr>td{
+        vertical-align: middle;
+      }
+    </style>
     <div class="container">
         <div class="row">
             <!-- Blog Entries Column -->
             <div class="col-md-8">
               <div class="col-md-12">
                 <a href="blog-post.html">
-                <img class="img-responsive img-hover event-cover-style" src="http://placehold.it/600X250" alt="">
+                <img class="img-responsive img-hover event-cover-style" src="http://placehold.it/400X150" alt="">
                 </a><!-- 用于活动 -->
-              </div>
-              <div class="col-md-11">
-                <table class="table table-hover table-condensed">
+
+                <table class="table table-hover table-striped table-bordered">
+                  <tr >
+                    <th class="col-md-4" >コラム</td>
+                    <th class="col-md-8" >コンテンツ</th>
+                  </tr>
                   <tr>
-                    <th class="col-md-3">コラム</td>
-                    <th class="col-md-9">コンテンツ</th>
+                    <td>会社名</td>
+                    <td>アビーム コンサルティングは</td>
+                  </tr>
+                  <tr>
+                    <td>ホームページ</td>
+                    <td>
+                      <a href="http://jp.abeam.com/">http://jp.abeam.com/</a>
+                    </td>
                   </tr>
                   <tr>
                     <td>会社概要</td>
                     <td> アビーム コンサルティングは、設立以来20数年に渡り数多くの実績を残して来ました。 そして2003年11月からは現在の社名へと名を変え、飛躍的な発展を遂げているアジア圏を中心に全世界に事業展開しています。 これまで培ってきた地域の特性や商習慣を踏まえた独自の方法論と、高い専門性を持ったコンサルタントによって、クライアントと共に変革へ挑戦しています。<br>
-                      12月開催の戦略に特化した5日間の冬季インターンシップ開催にあたり、会社説明会を実施します。<br>インターンシップに参加する前に、アビームコンサルティングのこと、戦略ビジネスユニットのこと、現場の第一線で働く戦略コンサルタントの生の声をお伝えします。
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>会社ページ</td>
-                    <td>
-                      <a href="http://jp.abeam.com/">http://jp.abeam.com/</a>
+                      12月開催の戦略に特化した5日間の冬季インターンシップ開催にあたり、会社説明会を実施します。<br><br>インターンシップに参加する前に、アビームコンサルティングのこと、戦略ビジネスユニットのこと、現場の第一線で働く戦略コンサルタントの生の声をお伝えします。
                     </td>
                   </tr>
                   <tr>
@@ -459,10 +474,26 @@
                       ※「営業日」とは土・日・祝祭日を除いた日です。
                     </td>
                   </tr>
+                  <tr>
+                    <td>七联推荐指数</td>
+                    <td>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                      <span><i class="fa fa-star"></i></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>前辈经验</td>
+                    <td>
+                      一家好公司，需要注意的是选考时候要专业。笔试是TG-WEB，数学的部分需要更多的注意
+                    </td>
+                  </tr>
                 </table>
-              </div>
-              <div class="col-md-12">
-                <button class="btn btn-info btn-block ">点我申请</button>
+                <div class="col-md-12">
+                  <button class="btn btn-info btn-block" style="border-radius:40px">点我申请</button>
+                </div>
               </div>
             </div><!-- end of 左边栏 -->
 
