@@ -1,13 +1,21 @@
+/*
+ * Copyright 2015 QiLIan
+ * Contributing author: davidBera
+ */
+
+/* ====================================================================================================================
+ *  Header Setting
+ * ====================================================================================================================*/
+
   font-family: {
     "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
   }
+  /*背景颜色*/
   body{
-      /*背景颜色*/
       background-color: #fafafa;
   }
-
+  /*标题图片的定义*/
   .header-banner{
-    /*标题图片的定义*/
     background: url(../img/header-img.jpg) no-repeat center;
     background-size: cover;
     padding-top: 15%;
@@ -19,38 +27,40 @@
   .header-message {
     position: relative;
   }
+  /*标题文字*/
   .header-message > h1 {
-    /*标题文字*/
     margin: 0;
     font-size: 5em;
     color: white;
   }
+  /*华丽的分割线*/
   .header-message > hr{
-    /*华丽的分割线*/
     width: 85%;
     display:block;
   }
+  /*华丽的分割线*/
   .header-message > h3{
-    /*华丽的分割线*/
     color: white;
     font-size: 25px;
     font-weight: lighter;
   }
 
-  /*----- 头部定义完成 ------*/
+/* ====================================================================================================================
+ *  main-sectoin setting
+ * ====================================================================================================================*/
 
+ /*阅读的fa-icon*/
  .fa-eye, .fa-expand {
-   /*阅读的fa-icon*/
    color: #bdc3c7;
-   padding-right: 2px; /* distance between icon and text*/
+   padding-right: 2px;
  }
-
+ /* header部分的排版*/
  .page-header-layout-style{
-   /* header部分的排版*/
    color: #34495e;
  }
+
+ /*主标题*/
  h1 .page-header{
-   /*主标题*/
    font-size: 50px;
    font-weight: bold;
  }
@@ -58,57 +68,54 @@
        color: #444444;
        font-weight: normal;
    }
+
+ /*副标题*/
  .page-header-small-style{
-   /*副标题*/
    color: #A0A7AD;
    font-size: 16px;
  }
-
+  /*文章主题部分，占全部比例的8/12*/
   .col-md-8{
-    /*文章主题部分，占全部比例的8/12*/
     background-color: white;
     border-right: 1px solid #ecf0f1;
     border-left: 1px solid #ecf0f1;
-    /*
-    border-top: 1px solid #34495e;
-    */
     padding: 0px;
   }
-
+  /* 图片占据整个空间，所以设定padding=0px */
   .col-md-8 > .col-md-12{
-    /* 图片占据整个空间，所以设定padding=0px */
     padding: 0px;
   }
+  /* 网站主体*/
+  /* 文章中显示发布时间的color */
   .col-md-8 > .col-md-11 > h6{
-    /* 网站主体*/
-    /* 文章中显示发布时间的color */
     color: #bdc3c7;
   }
+  /* 消息 */
   .col-md-8 > .col-md-11{
-    /* 消息 */
     padding:25px; /* 20px的目标是把event图片和文本之间的距离控制好 */
     padding-bottom: 40px;
     border-bottom: 1px solid #ecf0f1;
     }
+  /*左侧边栏显示颜色*/
+  .news-1:hover{
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: #39d179;
+    padding-left:22px; /* 同样的padding距离保证font不会向右移动*/
+  }
 
-    .news-1:hover{
-      /*左侧边栏显示颜色*/
-      border-left-width: 3px;
-      border-left-style: solid;
-      border-left-color: #39d179;
-      padding-left:22px; /* 同样的padding距离保证font不会向右移动*/
-      /* box-shadow: 1px 1px 2px grey; */
-    }
+  /*文章的描述文字*/
   .description-style{
-    /*文章的描述文字*/
     color:#7f8c8d;
     line-height: 200%;
   }
+
   /* Definition of Image */
   .img-thumbView{
     float: right;
     margin-left:20px;
   }
+
   .icon-tools{
     position:relative;
     height: 15px;
@@ -117,24 +124,24 @@
     padding-left: 0px;
   }
 
+  /*定义tag 颜色*/
   .label-style{
-      /*定义tag 颜色*/
       background-color: rgba(39, 174, 96, 0.7);
-    }
+  }
 
+  /*主页面的小图片*/
+  /*
+    1. 发布时间
+    2. 阅读数
+  */
   .main-list-group{
-    /*主页面的小图片*/
-    /*
-      1. 发布时间
-      2. 阅读数
-    */
     display: inline;
     margin-right: 12px;
     color: #bdc3c7;
   }
+
+  /*banner，用于七联的活动宣传，以及未来广告的插入栏*/
   .event-cover-style{
-    /*banner，用于七联的活动宣传，以及未来广告的插入栏*/
-    /*figure will cross the whole column, which means ignore the padding*/
     box-sizing: border-box;
     height: 100%;
     width: 100%;
@@ -158,10 +165,13 @@
     color:#1abc9c;
   }
 
-  /************************/
+  /* ====================================================================================================================
+   *  side-bar setting
+   * ====================================================================================================================*/
 
+   /*侧边栏的layout*/
   .sidebar-layouts{
-    /*侧边栏的layout*/
+
     margin: 10px;
     padding:10px;
     border-bottom-width: 1px;
@@ -170,27 +180,26 @@
     }
 
   .sidebar-col-md-4{
-    /*用来宣传我们的专栏文章*/
-    /*为了让图片可以在右侧占据整个部分，这里设定margin，padding为*/
-    /*带来的结果就是所有的其他的元素，都需要相对应的设定margin和padding*/
     margin: 0px;
     padding: 0px;
   }
+
+  /*定义所有sidebar的每一个section的title*/
   .sidebar-section-title{
-    /*定义所有sidebar的每一个section的title*/
     font-weight: bolder;
     font-size: 18px;
   }
 
+  /* 侧边栏 tags 定义*/
   .sidebar-tags{
-    /* 侧边栏 tags 定义*/
     margin-bottom: 8px;
     margin-right: 8px;
-    border-radius: 25px;
+    border-radius:40px;
     opacity: 0.6;
   }
+
+  /*针对side-bar block的定义*/
   .sidebar-topPick-block{
-    /*针对side-bar block的定义*/
     display: block;
     padding: 5px;
     border-bottom-style: solid;
@@ -200,29 +209,55 @@
     font-size: 13px;
   }
 
+  /*侧边栏top pick的文章标题*/
   .sidebar-topPick-title{
-    /*侧边栏top pick的文章标题*/
     line-height: 150%;
   }
 
+  /*描述性文字的定义*/
   .side-bar-topPick-description{
-    /*描述性文字的定义*/
     line-height: 150%;
     opacity: 100%;
   }
   .sidebar-topPick-block > h4{
     font-size: 15px;
   }
+
   .fa-star{
     /*对小星星的定义*/
     color: #f1c40f;
     margin-right: 3px;
   }
+
   .fa-tages,.fa-thumb-tack{
     margin-right: 5px;
   }
 
-/*尚未完成部分！！！！！！！！！！*/
+  /* ====================================================================================================================
+   *  新增tag定义（整合之后，请删除comment部分）
+   * ====================================================================================================================*/
+
+  /* tag上的badge颜色 */
+  .btn-default > .badge{
+    background-color:#2ecc71;
+    color: white;
+    font-size: 10px;
+  }
+
+  .sidebar-subsection-title{
+      font-size: 15px;
+      font-weight: 400;
+  }
+
+  /* sub分类的距离 */
+  .sidebar-subsection-layout{
+    padding: 5px;
+    margin: 5px;
+  }
+
+/* ====================================================================================================================
+ *  继续阅读，收藏（未完成）
+ * ====================================================================================================================*/
 .continue_Reading{
   /*继续阅读定义*/
   color: #57ad68;
