@@ -1,11 +1,4 @@
 
-.course-contents{
-	/*具体课程layout*/
-	/*主要是为了和上面的介绍文字分开距离*/
-	margin-top: 50px;
-  margin-bottom: 100px;
-}
-
 .panel-heading{
 	padding: 0px;
 }
