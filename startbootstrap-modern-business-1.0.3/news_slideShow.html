@@ -35,9 +35,11 @@
     <!-- Count-down CSS -->
     <link href="countDown/flipclock.css" rel="stylesheet">
 
-    <!-- Count-down JavaScript -->
-    <script src="countDown/flipclock.js"></script>
+    <!-- qilian-tab CSS -->
+    <link href="css/qilian-tab.css" rel="stylesheet">
 
+    <!-- flexslider CSS-->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" />
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -138,19 +140,28 @@
     <div class="header-banner">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 header-message">
-            <h1>七联视界</h1>
-            <hr>
-            <h3>
-              有态度的资讯 左右职业人生
-            </h3>
-            <!-- <a href=# class="btn btn-lg btn-success header-btn">了解我们</a> -->
+          <div class="col-md-12">
+              <!-- image here -->
+                  <div class="flexslider">
+                    <ul class="slides">
+                      <li data-thumb="img/SharingPlatform/sharingPlatform_2.jpg">
+                        <img class="img-responsive" alt="Responsive image" src="img/SharingPlatform/sharingPlatform_2.jpg">
+                      </li>
+                      <li data-thumb="img/SharingPlatform/sharingPlatform_3.jpg">
+                        <img class="img-responsive" alt="Responsive image" src="img/SharingPlatform/sharingPlatform_3.jpg">
+                      </li>
+                      <li data-thumb="img/SharingPlatform/sharingPlatform_4.jpg">
+                        <img class="img-responsive" alt="Responsive image" src="img/SharingPlatform/sharingPlatform_4.jpg">
+                      </li>
+                      <li data-thumb="http://qilian.jp/appointment/img/original/news_detail_20151113.jpg">
+                        <img class="img-responsive" alt="Responsive image" src="http://qilian.jp/appointment/img/original/news_detail_20151113.jpg">
+                      </li>
+                    </ul>
+                </div>
           </div>
         </div>
       </div>
     </div><!-- end of header -->
-
-
 
     <!-- Page Content -->
     <div class="container">
@@ -377,45 +388,97 @@
                     </div>
                 </div>
 
-                <!-- 5 Top Picks Articles -->
+                <!-- 5 Top Picks Articles with 3 Tabs -->
                 <div class="col-md-12 sidebar-layouts">
                   <h4 class="sidebar-section-title"><i class="fa fa-thumb-tack"></i>人气推荐</h4>
-                  <div class="sidebar-topPick-block">
-                    <h4>
-                      <a href=#>
-                      <i class="fa fa-star"></i>  ES通关的NB方法</a>
-                    </h4>
-                    <p class="side-bar-topPick-description">
-                      所有公司的招聘过程都是从提交ES开始，通过这一关，我们才能得到机会向公司展现自己的实力。今天，我们就来谈一谈ES通关的方法，虽然不是绝对，但希望能帮助大家更快的进入到就职过程的下一个阶段.
-                    </p>
-                  </div>
-                  <div class="sidebar-topPick-block">
-                    <h4>
-                      <a href=#>
-                      <i class="fa fa-star"></i>如何在说明会上脱颖而出</a>
-                    </h4>
-                    <p class="side-bar-topPick-description">
-                      介绍的部分文字有限
-                    </p>
-                  </div>
-                  <div class="sidebar-topPick-block">
-                    <h4 class="sidebar-topPick-title">
-                      <a href=#>
-                      <i class="fa fa-star"></i>【长文本】长文本长文本长文本长文本长文本长文本长文本长文本</a>
-                    </h4>
-                    <p class="side-bar-topPick-description">
-                      长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                      长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                      长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                      长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                      长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                      长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                    </p>
-                  </div>
-                </div><!-- end of top 3-->
-              </div><!-- end of row -->
+                  <ul class="nav nav-tabs nav-justified">
+                    <li class="active">
+                      <a href="#weeklyPicks" data-toggle="tab"><h4 class="sidebar-subsection-title">周榜</h4></a>
+                    </li>
+                    <li>
+                      <a href="#monthlyPicks" data-toggle="tab"><h4 class="sidebar-subsection-title">月榜</h4></a>
+                    </li>
+                    <li>
+                      <a href="#allPicks" data-toggle="tab"><h4 class="sidebar-subsection-title">总排行</h4></a>
+                    </li>
+                  </ul>
+                    <!-- 排行榜具体内容 -->
+                    <div class="tab-content">
+                        <!-- 周榜单 -->
+                        <div class="tab-pane active in" id="weeklyPicks">
+                          <div class="sidebar-topPick-block">
+                            <h4>
+                              <a href=#>
+                              <i class="fa fa-star"></i>  ES通关的NB方法</a>
+                            </h4>
+                            <p class="side-bar-topPick-description">
+                              所有公司的招聘过程都是从提交ES开始，通过这一关，我们才能得到机会向公司展现自己的实力。今天，我们就来谈一谈ES通关的方法，虽然不是绝对，但希望能帮助大家更快的进入到就职过程的下一个阶段.
+                            </p>
+                          </div>
+                        </div><!-- end of 周榜单 -->
+                        <!-- 月榜单 -->
+                        <div class="tab-pane fade" id="monthlyPicks">
+                          <div class="sidebar-topPick-block">
+                            <h4>
+                              <a href=#>
+                              <i class="fa fa-star"></i>  ES通关的NB方法</a>
+                            </h4>
+                            <p class="side-bar-topPick-description">
+                              所有公司的招聘过程都是从提交ES开始，通过这一关，我们才能得到机会向公司展现自己的实力。今天，我们就来谈一谈ES通关的方法，虽然不是绝对，但希望能帮助大家更快的进入到就职过程的下一个阶段.
+                            </p>
+                          </div>
+                          <div class="sidebar-topPick-block">
+                            <h4>
+                              <a href=#>
+                              <i class="fa fa-star"></i>如何在说明会上脱颖而出</a>
+                            </h4>
+                            <p class="side-bar-topPick-description">
+                              介绍的部分文字有限
+                            </p>
+                          </div>
+                        </div><!-- end of 月榜单 -->
+                        <!-- 总榜单 -->
+                        <div class="tab-pane active in" id="allPicks">
+                          <div class="sidebar-topPick-block">
+                            <h4>
+                              <a href=#>
+                              <i class="fa fa-star"></i>  ES通关的NB方法</a>
+                            </h4>
+                            <p class="side-bar-topPick-description">
+                              所有公司的招聘过程都是从提交ES开始，通过这一关，我们才能得到机会向公司展现自己的实力。今天，我们就来谈一谈ES通关的方法，虽然不是绝对，但希望能帮助大家更快的进入到就职过程的下一个阶段.
+                            </p>
+                          </div>
+                          <div class="sidebar-topPick-block">
+                            <h4>
+                              <a href=#>
+                              <i class="fa fa-star"></i>如何在说明会上脱颖而出</a>
+                            </h4>
+                            <p class="side-bar-topPick-description">
+                              介绍的部分文字有限
+                            </p>
+                          </div>
+                          <div class="sidebar-topPick-block">
+                            <h4 class="sidebar-topPick-title">
+                              <a href=#>
+                              <i class="fa fa-star"></i>【长文本】长文本长文本长文本长文本长文本长文本长文本长文本</a>
+                            </h4>
+                            <p class="side-bar-topPick-description">
+                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
+                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
+                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
+                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
+                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
+                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
+                            </p>
+                          </div>
+                        </div><!-- end of 总榜单 -->
+                    </div><!-- end of 具体内容-tab -->
+                </div><!-- end of 5 Top Picks Articles with 3 Tabs -->
 
-        </div> <!-- end of row -->
+            </div><!-- end of side-bar -->
+
+          </div>
+
     </div><!-- /.container -->
 
     <!-- Footer -->
@@ -455,6 +518,12 @@
         </div>
       </div>
     </div> -->
+
+    <!-- jQuery -->
+    <!-- 必须添加两个JS才可以！ -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <!-- COUNTDOWN -->
@@ -512,6 +581,17 @@
     });
     </script>
 
+    <!-- FLexSlider -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+          controlNav: "thumbnails"
+        });
+      });
+    </script>
 
 
 </body>
