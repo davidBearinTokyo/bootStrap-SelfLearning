@@ -138,33 +138,49 @@
 
     <!-- Page Header -->
     <div class="header-banner">
-      <div class="container-fluid">
-              <!-- image here -->
-                  <div class="flexslider" >
-                    <ul class="slides">
-                      <li data-thumb="img/SharingPlatform/sharingPlatform_1.jpg">
-                        <img class="img-responsive" alt="Responsive image" src="img/SharingPlatform/sharingPlatform_1.jpg">
-                      </li>
-                      <li data-thumb="img/SharingPlatform/sharingPlatform_3.jpg">
-                        <img class="img-responsive" alt="Responsive image" src="img/SharingPlatform/sharingPlatform_3.jpg">
-                      </li>
-                      <li data-thumb="img/SharingPlatform/sharingPlatform_4.jpg">
-                        <img class="img-responsive" alt="Responsive image" src="img/SharingPlatform/sharingPlatform_4.jpg">
-                      </li>
-                      <li data-thumb="http://qilian.jp/appointment/img/original/news_detail_20151113.jpg">
-                        <img class="img-responsive" alt="Responsive image" src="http://qilian.jp/appointment/img/original/news_detail_20151113.jpg">
-                      </li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 header-message">
+            <h1>七联视界</h1>
+            <hr>
+            <h3><span class="slogan">
+              有态度的资讯 左右职业人生</span>
+            </h3>
+          </div>
+          <div class="down-arrow floating-arrow"><a href="#news"><i class="fa fa-angle-down"></i></a></div>
+        </div>
       </div>
     </div><!-- end of header -->
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" id="news">
         <div class="row">
             <!-- Blog Entries Column -->
             <div class="col-md-8">
-              <!-- -->
+
+              <!-- Add slide-show for promotion -->
+              <div class="col-md-12">
+                <div class="flexslider" style="margin:0;" >
+                  <ul class="slides">
+                    <li>
+                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/news_detail_news.jpg">
+                    </li>
+                    <li>
+                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/banner-newsPage.jpg">
+                    </li>
+                    <li>
+                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/news_detail_20150919.jpg">
+                    </li>
+                    <li>
+                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/news_detail_20151105_coverPage.jpg">
+                    </li>
+                  </ul>
+                </div>
+                <!-- <a href="blog-post.html">
+                <img class="img-responsive img-hover event-cover-style" src="http://placehold.it/600X250" alt="">
+              </a> -->
+              </div>
+
               <div class="col-md-11 news-1">
                  <h4>
                    <a href="#"> 山王制药招聘</a>
@@ -484,6 +500,7 @@
                 <div class="col-md-7">
                     <div class="footer-links">
                         <ul class="footer-group">
+                            <li><a href="#news"  class="footer-sitemap">回到上方</a></li>
                             <li><a href="#"  class="footer-sitemap">课程平台</a></li>
                             <li><a href="#"  class="footer-sitemap">求人情报</a></li>
                             <li><a href="http://www.qilian.jp/news" class="footer-sitemap">七联视界</a></li>
@@ -578,18 +595,57 @@
     </script>
 
     <!-- FLexSlider -->
+    <!-- REFERENCE: https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties-->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script type="text/javascript" charset="utf-8">
       $(window).load(function() {
         $('.flexslider').flexslider({
-          animation: "slide",
-          controlNav: "thumbnails"
+          animation: "fade",
+          animationLoop: true,
+          slideshow: true,
+          keyboard: true,
+          controlNav: false
         });
       });
     </script>
 
+    <!-- スムーズスクロール部分の記述 -->
+    <script>
+    $(function(){
+       // #で始まるアンカーをクリックした場合に処理
+         $('a[href^=#]').click(function() {
+            // スクロールの速度
+            var speed = 600; // ミリ秒
+            // アンカーの値取得
+            var href= $(this).attr("href");
+            // 移動先を取得
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            // 移動先を数値で取得
+            var position = target.offset().top;
+            // スムーススクロール
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+         });
+    });
+    </script>
+
+    <!-- type.JS -->
+    <!--
+      REFERENCE: https://github.com/mattboldt/typed.js/
+    -->
+    <script src="jquery.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+      $(function(){
+          $(".slogan").typed({
+              strings: ["有态度的资讯", "左右职业人生", "有态度的资讯, 左右职业人生"],
+              loop: true,
+              showCursor: true,
+              typeSpeed: 150
+            });
+      });
+    </script>
 
 </body>
-
 </html>
