@@ -38,6 +38,11 @@
     <!-- qilian-tab CSS -->
     <link href="css/qilian-tab.css" rel="stylesheet">
 
+    <!-- flexslider CSS-->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/backToTop.css">
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -140,11 +145,11 @@
           <div class="col-md-12 header-message">
             <h1>七联视界</h1>
             <hr>
-            <h3>
-              有态度的资讯 左右职业人生
+            <h3><span class="slogan">
+              有态度的资讯 左右职业人生</span>
             </h3>
-            <!-- <a href=# class="btn btn-lg btn-success header-btn">了解我们</a> -->
           </div>
+          <div class="down-arrow floating-arrow"><a href="#news"><i class="fa fa-angle-down"></i></a></div>
         </div>
       </div>
     </div><!-- end of header -->
@@ -152,11 +157,29 @@
 
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" id="news">
         <div class="row">
             <!-- Blog Entries Column -->
             <div class="col-md-8">
-              <!-- -->
+              <!-- Add slide-show for promotion -->
+              <div class="col-md-12">
+                <div class="flexslider" style="margin:0;" >
+                  <ul class="slides">
+                    <li>
+                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/news_detail_news.jpg">
+                    </li>
+                    <li>
+                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/banner-newsPage.jpg">
+                    </li>
+                    <li>
+                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/news_detail_20150919.jpg">
+                    </li>
+                    <li>
+                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/news_detail_20151105_coverPage.jpg">
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div class="col-md-11 news-1">
                  <h4>
                    <a href="#"> 山王制药招聘</a>
@@ -496,17 +519,6 @@
     </footer>
     <!-- end of footer -->
 
-    <!-- Back to Top Button -->
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-8">
-          <p id="back-top">
-            <a href="#top" class="btn btn-success">Back to Top</a>
-          </p>
-        </div>
-      </div>
-    </div> -->
-
     <!-- jQuery -->
     <!-- 必须添加两个JS才可以！ -->
     <script src="js/jquery.js"></script>
@@ -537,38 +549,58 @@
 
       });
     </script>
+    <!-- type.JS -->
 
-    <!-- Back to top -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <!-- FLexSlider -->
+    <!-- REFERENCE: https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "fade",
+          animationLoop: true,
+          slideshow: true,
+          keyboard: true,
+          controlNav: false
+        });
+      });
+    </script>
+
+    <!-- スムーズスクロール部分の記述 -->
     <script>
-    $(document).ready(function(){
-
-    	// hide #back-top first
-    	$("#back-top").hide();
-
-    	// fade in #back-top
-    	$(function () {
-    		$(window).scroll(function () {
-
-        	if ($(this).scrollTop() > 100) {
-    				$('#back-top').fadeIn();
-    			} else {
-    				$('#back-top').fadeOut();
-    			}
-    		});
-
-    		// scroll body to 0px on click
-    		$('#back-top').click(function () {
-    			$('body,html').animate({
-    				scrollTop: 0
-    			}, 800);
-    			return false;
-    		});
-    	});
-
+    $(function(){
+       // #で始まるアンカーをクリックした場合に処理
+         $('a[href^=#]').click(function() {
+            // スクロールの速度
+            var speed = 600; // ミリ秒
+            // アンカーの値取得
+            var href= $(this).attr("href");
+            // 移動先を取得
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            // 移動先を数値で取得
+            var position = target.offset().top;
+            // スムーススクロール
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+         });
     });
     </script>
 
+    <!--
+      REFERENCE: https://github.com/mattboldt/typed.js/
+    -->
+    <script src="jquery.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+      $(function(){
+          $(".slogan").typed({
+              strings: ["有态度的资讯", "左右职业人生", "有态度的资讯, 左右职业人生"],
+              loop: true,
+              showCursor: true,
+              typeSpeed: 300
+            });
+      });
+    </script>
 </body>
-
 </html>

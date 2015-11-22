@@ -14,14 +14,16 @@
   body{
       background-color: #fafafa;
   }
+
   /*标题图片的定义*/
   .header-banner{
-    background: url(../img/header-img.jpg) no-repeat center;
+    background: url(../img/news_bgd.jpg) no-repeat center;
+    background-color:#2980b9;
     background-size: cover;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 20%;
+    padding-bottom: 25%;
     text-align: center;
-    color:700px;
+    color:700px;*/
     margin-bottom: 5px;
   }
   .header-message {
@@ -30,7 +32,7 @@
   /*标题文字*/
   .header-message > h1 {
     margin: 0;
-    font-size: 5em;
+    font-size: 4.5em;
     color: white;
   }
   /*华丽的分割线*/
@@ -44,6 +46,74 @@
     font-size: 25px;
     font-weight: lighter;
   }
+
+  /* 跳动的指引图标 */
+  .down-arrow {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .floating-arrow {
+    -webkit-animation-name: floating-arrow;
+            animation-name: floating-arrow;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+
+  @-webkit-keyframes floating-arrow {
+    from {
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); }
+    65% {
+      -webkit-transform: translate(-50%, 15px);
+              transform: translate(-50%, 15px); }
+    to {
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); } }
+
+  @keyframes floating-arrow {
+    from {
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); }
+    65% {
+      -webkit-transform: translate(-50%, 15px);
+              transform: translate(-50%, 15px); }
+    to {
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); } }
+
+
+    /* 为type.js 添加光标效果 */
+    .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    }
+    @keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+    }
 
 /* ====================================================================================================================
  *  main-sectoin setting
