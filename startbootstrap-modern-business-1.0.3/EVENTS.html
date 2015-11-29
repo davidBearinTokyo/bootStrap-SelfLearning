@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>七联 - 日本最大的留学生职业发展支援平台</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,8 +26,9 @@
     <!-- Back to top Css -->
     <!-- 这个部分要集合到blog-list里面 -->
     <link rel="stylesheet" href="css/backToTop.css">
-    <!-- news.css -->
-    <link rel="stylesheet" href="css/news.css">
+
+    <!-- events.css -->
+    <link rel="stylesheet" href="css/events.css">
 
     <!-- Footer -->
     <link rel="stylesheet" href="css/footer.css">
@@ -141,10 +142,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 header-message">
-            <h1>七联视界</h1>
+            <h1>七联生活</h1>
             <hr>
-            <h3><span class="slogan">
-              有态度的资讯 左右职业人生</span>
+            <h3>
+              <span class="slogan">
+                与君初相识, 犹如旧人归
+              </span>
             </h3>
           </div>
           <div class="down-arrow floating-arrow"><a href="#news"><i class="fa fa-angle-down"></i></a></div>
@@ -152,266 +155,270 @@
       </div>
     </div><!-- end of header -->
 
-
-    <style>
-      /* define events-board */
-      .events-board-color{
-        background-color:#EEEEEE;
-      }
-      .events-board-color > h3 {
-        font-weight: bold;
-        font-size: 25px;
-        text-align: center;
-        color: #2c3e50;
-        padding-top: 15px;
-      }
-      .events-board-color > p{
-        font-size: 15px;
-        text-align: center;
-        color: #34495e;
-      }
-    </style>
     <!-- Page Content -->
     <div class="container-fluid" id="news">
         <div class="row">
-            <!-- Blog Entries Column -->
-            <div class="col-md-8">
-
-              <div class="col-md-4 col-sm-12">
+            <!-- 只有第一排单独设定padding-top:100px, 为了不让nav-fix-top遮挡住第一排 -->
+            <div class="col-md-12 board-row-style" style="padding-top:100px">
+              <div class="col-md-3 col-sm-12">
                   <div class="panel panel-default">
-                      <div class="panel-heading" style="padding:0px;">
+                      <div class="panel-heading">
+                        <img src="http://www.qilian.jp/image/news_detail_waizixuanjiang.jpg" class="img-responsive">
+                      </div>
+                      <div class="panel-body events-board-color">
+                          <div class="col-md-12">
+                          <h4><a href="#">外资课程宣讲会</a></h4>
+                            <p>
+                              <i class="fa fa-heart"></i> <span style="margin-left:5px;">341 Likes</span>
+                            </p>
+                          </div>
+                          <!-- Basic info -->
+                          <table class="table table-striped">
+                            <tr>
+                                <!-- 点击日历图标，跳转到日历 -->
+                                <td class="md-col-6 icon-center"><i class="fa fa-calendar"></i></td>
+                                <td class="md-col-6">2015/10/17 10:30 - 16:30</td>
+                            </tr>
+                            <tr>
+                              <td class="md-col-6 icon-center"><i class="fa fa-users"></i></td>
+                              <td class="md-col-6">25 / 80</td>
+                            </tr>
+                            <tr>
+                              <td class="md-col-6 icon-center"><i class="fa fa-money"></i></td>
+                              <td class="md-col-6">FREE</td>
+                            </tr>
+                            <!-- 添加空白行，为了在最下方添加细线 -->
+                            <tr>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </table>
+                          <div class="col-md-12">
+                              <a class="btn btn-block btn-event-details">
+                                查看详情
+                              </a>
+                          </div>
+                        </div>
+                  </div>
+              </div><!-- end of row -->
+
+              <div class="col-md-3 col-sm-12">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <img src="img/job_class.png" class="img-responsive">
+                      </div>
+                      <div class="panel-body events-board-color">
+                          <div class="col-md-12">
+                          <h4><a href="#">就职公益讲座</a></h4>
+                            <p>
+                              <i class="fa fa-heart"></i> <span style="margin-left:5px;">25 Likes</span>
+                            </p>
+                          </div>
+                          <!-- Basic info -->
+                          <table class="table table-striped">
+                            <tr>
+                                <td class="md-col-6 icon-center"><i class="fa fa-calendar"></i></td>
+                                <td class="md-col-6">2015/12/12 14:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                              <td class="md-col-6 icon-center"><i class="fa fa-users"></i></td>
+                              <td class="md-col-6">55 / 80</td>
+                            </tr>
+                            <tr>
+                              <td class="md-col-6 icon-center"><i class="fa fa-money"></i></td>
+                              <td class="md-col-6">¥1000</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </table>
+                          <div class="col-md-12">
+                              <a class="btn btn-block btn-event-details">
+                                查看详情
+                              </a>
+                          </div>
+                        </div>
+                  </div>
+              </div><!-- end of row -->
+
+              <div class="col-md-3 col-sm-12">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
                         <img src="http://www.qilian.jp/image/news_detail_20151128_coverPage.jpg" class="img-responsive">
                       </div>
-                      <div class="panel-body events-board-color"  style="padding:0px;">
-                          <h3>一起看红叶, 一起BBQ</h3>
+                      <div class="panel-body events-board-color">
+                          <div class="col-md-12">
+                          <h4><a href="#">昭和纪念公园看红叶</a></h4>
+                            <p>
+                              <i class="fa fa-heart"></i> <span style="margin-left:5px;">58 Likes</span>
+                            </p>
+                          </div>
                           <!-- Basic info -->
-                          <!-- <table class="table table-bordered">
+                          <table class="table table-striped">
                             <tr>
-                                <td class="md-col-4" style="text-align:center"><i class="fa fa-calendar"></i></td>
-                                <td class="md-col-4">2015/11/28 10:30 - 16:30</td>
+                                <td class="md-col-6 icon-center"><i class="fa fa-calendar"></i></td>
+                                <td class="md-col-6">2015/11/28 10:30 - 16:30</td>
                             </tr>
                             <tr>
-                              <td class="md-col-4" style="text-align:center"><i class="fa fa-users"></i></td>
-                              <td class="md-col-4">55 / 80</td>
+                              <td class="md-col-6 icon-center"><i class="fa fa-users"></i></td>
+                              <td class="md-col-6 over-registered-number">45 / 30</td>
                             </tr>
                             <tr>
-                              <td class="md-col-4" style="text-align:center"><i class="fa fa-money"></i></td>
-                              <td class="md-col-4">5000¥</td>
+                              <td class="md-col-6 icon-center"><i class="fa fa-money"></i></td>
+                              <td class="md-col-6">学生: ¥2500 / 社会人: ¥3500</td>
                             </tr>
-                          </table> -->
-
-                          <p><i class="fa fa-calendar"></i> 2015/11/28 @ 10:30 AM</p>
-                          <br>
-                          <p>
-                            <a class="btn btn-default" style="margin:10px; border-radius:40px; border-color:#27ae60; color:#27ae60;">
-                              查看详情
-                            </a>
-                          </p>
-                          <!-- <p style="text-align:left">
-                            <i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star"></i> <span style="margin-left:5px;">350 reviews</span>
-                          </p> -->
+                            <tr>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </table>
+                          <div class="col-md-12">
+                              <a class="btn btn-block btn-event-details">
+                                查看详情
+                              </a>
+                          </div>
+                        </div>
+                  </div>
+              </div><!-- end of row -->
+              <div class="col-md-3 col-sm-12">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <img src="http://qilian.jp/image/news_detail_news.jpg" class="img-responsive">
                       </div>
+                      <div class="panel-body events-board-color">
+                          <div class="col-md-12">
+                          <h4><a href="#">七联・报</a></h4>
+                            <p>
+                              <i class="fa fa-heart"></i> <span style="margin-left:5px;">341 Likes</span>
+                            </p>
+                          </div>
+                          <!-- Basic info -->
+                          <table class="table table-striped">
+                            <tr>
+                                <!-- 点击日历图标，跳转到日历 -->
+                                <td class="md-col-6 icon-center"><i class="fa fa-calendar"></i></td>
+                                <td class="md-col-6">2015/10/17 10:30 - 16:30</td>
+                            </tr>
+                            <tr>
+                              <td class="md-col-6 icon-center"><i class="fa fa-users"></i></td>
+                              <td class="md-col-6">25 / 80</td>
+                            </tr>
+                            <tr>
+                              <td class="md-col-6 icon-center"><i class="fa fa-money"></i></td>
+                              <td class="md-col-6">FREE</td>
+                            </tr>
+                            <!-- 添加空白行，为了在最下方添加细线 -->
+                            <tr>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </table>
+                          <div class="col-md-12">
+                              <a class="btn btn-block btn-event-details">
+                                查看详情
+                              </a>
+                          </div>
+                        </div>
+                  </div>
+              </div><!-- end of row -->
+           </div>
+              <!--
+              ****************************************
+              *********  FIRST ROW FINISH  ***********
+              ****************************************
+              -->
+            <div class="col-md-12 board-row-style">
+              <div class="col-md-3 col-sm-12">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <img src="http://www.qilian.jp/image/news_detail_assetManagement_1.jpg" class="img-responsive">
+                      </div>
+                      <div class="panel-body events-board-color">
+                          <div class="col-md-12">
+                          <h4> <a href="#"> 资产运用・系列课程 </a></h4>
+                            <p>
+                              <i class="fa fa-heart"></i> <span style="margin-left:5px;">25 Likes</span>
+                            </p>
+                          </div>
+                          <!-- Basic info -->
+                          <table class="table table-striped">
+                            <tr>
+                                <td class="md-col-6 icon-center"><i class="fa fa-calendar"></i></td>
+                                <td class="md-col-6">2015/12/12 14:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                              <td class="md-col-6 icon-center"><i class="fa fa-users"></i></td>
+                              <td class="md-col-6">55 / 80</td>
+                            </tr>
+                            <tr>
+                              <td class="md-col-6 icon-center"><i class="fa fa-money"></i></td>
+                              <td class="md-col-6">¥1000</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </table>
+                          <div class="col-md-12">
+                              <a class="btn btn-block btn-event-details">
+                                查看详情
+                              </a>
+                          </div>
+                        </div>
                   </div>
               </div><!-- end of row -->
 
-              <div class="col-md-4 col-sm-12">
-                  <div class="panel panel-default text-center">
-                      <div class="panel-heading" style="padding:0px;">
-                        <img src="img/course_img_temp.png" class="img-responsive">
+              <div class="col-md-3 col-sm-12">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <img src="http://www.qilian.jp/image/news_insider_20151114_insider.jpg" class="img-responsive">
                       </div>
-                      <div class="panel-body">
-                          <p style="text-align:left">2小时咨询业界详解 <br>
-                            <small>by Vivian / 咨询业界M社</small>
-                          </p>
-                          <p style="text-align:left">
-                            <i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star"></i> <span style="margin-left:5px;">350 reviews</span>
-                          </p>
-                      </div>
-                      <div class="panel-footer" style="text-align:left; font-size:15px;">
-                        <i class="fa fa-users"></i> 25位同学
-                        <span style="float:right;">
-                          5000¥ / 2h
-                        </span>
-                      </div>
+                      <div class="panel-body events-board-color">
+                          <div class="col-md-12">
+                          <h4><a href="#">Insiders</a></h4>
+                            <p>
+                              <i class="fa fa-heart"></i> <span style="margin-left:5px;">58 Likes</span>
+                            </p>
+                          </div>
+                          <!-- Basic info -->
+                          <table class="table table-striped">
+                            <tr>
+                                <td class="md-col-6 icon-center"><i class="fa fa-calendar"></i></td>
+                                <td class="md-col-6">2015/11/28 10:30 - 16:30</td>
+                            </tr>
+                            <tr>
+                              <td class="md-col-6 icon-center"><i class="fa fa-users"></i></td>
+                              <td class="md-col-6 over-registered-number">45 / 30</td>
+                            </tr>
+                            <tr>
+                              <td class="md-col-6 icon-center"><i class="fa fa-money"></i></td>
+                              <td class="md-col-6">学生: ¥2500 / 社会人: ¥3500</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </table>
+                          <div class="col-md-12">
+                              <a class="btn btn-block btn-event-details">
+                                查看详情
+                              </a>
+                          </div>
+                        </div>
                   </div>
               </div><!-- end of row -->
-
-              <div class="col-md-4 col-sm-12">
-                  <div class="panel panel-default text-center">
-                      <div class="panel-heading" style="padding:0px;">
-                        <img src="img/course_img_temp.png" class="img-responsive">
-                      </div>
-                      <div class="panel-body">
-                          <p style="text-align:left">2小时咨询业界详解 <br>
-                            <small>by Vivian / 咨询业界M社</small>
-                          </p>
-                          <p style="text-align:left">
-                            <i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star" style="color:#f1c40f"></i><i class="fa fa-star"></i> <span style="margin-left:5px;">350 reviews</span>
-                          </p>
-                      </div>
-                      <div class="panel-footer" style="text-align:left; font-size:15px;">
-                        <i class="fa fa-users"></i> 25位同学
-                        <span style="float:right;">
-                          5000¥ / 2h
-                        </span>
-                      </div>
-                  </div>
-              </div><!-- end of row -->
-
-
-
-            </div><!-- col-md-8 -->
-
-              <div class="col-md-4 sidebar-col-md-4">
-                <!-- 边栏tag -->
-                <div class="col-md-12 sidebar-layouts">
-                  <h4 class="sidebar-section-title"><i class="fa fa-tags"></i> 分类浏览</h4>
-                    <!-- 情报搜集 -->
-                    <div class="col-md-12 sidebar-subsection-layout">
-                      <h4 class="sidebar-subsection-title">情报搜集</h4>
-                      <a href=# class="btn btn-default sidebar-tags">就职情报  <span class="badge" >42</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">大环境分析  <span class="badge">20</span></a>
-                    </div>
-                    <!-- 人气专栏 -->
-                    <div class="col-md-12 sidebar-subsection-layout">
-                      <h4 class="sidebar-subsection-title"></i> 人气专栏</h4>
-                      <a href=# class="btn btn-default sidebar-tags">娴谈专栏  <span class="badge">42</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">肉包专栏  <span class="badge">20</span></a>
-                    </div>
-                    <!-- 突破选考 -->
-                    <div class="col-md-12 sidebar-subsection-layout">
-                      <h4 class="sidebar-subsection-title"></i>突破选考</h4>
-                      <a href=# class="btn btn-default sidebar-tags">自我分析  <span class="badge">42</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">志望动机  <span class="badge">20</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">合同说明会  <span class="badge">42</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">GD  <span class="badge">20</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">ES  <span class="badge">42</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">面试对策  <span class="badge">20</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">实习对策  <span class="badge">42</span></a>
-                    </div>
-                    <!-- 业界研究 / 企业研究 -->
-                    <div class="col-md-12 sidebar-subsection-layout">
-                      <h4 class="sidebar-subsection-title">业界研究 / 企业研究</h4>
-                      <a href=# class="btn btn-default sidebar-tags">金融  <span class="badge">42</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">咨询  <span class="badge">20</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">Maker  <span class="badge">20</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">Service  <span class="badge">20</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">IT  <span class="badge">20</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">商社  <span class="badge">20</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">外资  <span class="badge">20</span></a>
-                    </div>
-                    <!-- 人物访谈 -->
-                    <div class="col-md-12 sidebar-subsection-layout">
-                      <h4 class="sidebar-subsection-title">人物访谈</h4>
-                      <a href=# class="btn btn-default sidebar-tags">企业经营者访谈  <span class="badge">22</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">OBOG访谈  <span class="badge">22</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">就职经验  <span class="badge">13</span></a>
-                    </div>
-                    <!-- 七联提供 -->
-                    <div class="col-md-12 sidebar-subsection-layout">
-                      <h4 class="sidebar-subsection-title">七联提供</h4>
-                      <a href=# class="btn btn-default sidebar-tags">七联猎聘  <span class="badge">12</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">线下课程  <span class="badge">31</span></a>
-                      <a href=# class="btn btn-default sidebar-tags">线下活动  <span class="badge">4</span></a>
-                    </div>
-                </div>
-
-                <!-- 5 Top Picks Articles with 3 Tabs -->
-                <div class="col-md-12 sidebar-layouts">
-                  <h4 class="sidebar-section-title"><i class="fa fa-thumb-tack"></i>人气推荐</h4>
-                  <ul class="nav nav-tabs nav-justified">
-                    <li class="active">
-                      <a href="#weeklyPicks" data-toggle="tab"><h4 class="sidebar-subsection-title">周榜</h4></a>
-                    </li>
-                    <li>
-                      <a href="#monthlyPicks" data-toggle="tab"><h4 class="sidebar-subsection-title">月榜</h4></a>
-                    </li>
-                    <li>
-                      <a href="#allPicks" data-toggle="tab"><h4 class="sidebar-subsection-title">总排行</h4></a>
-                    </li>
-                  </ul>
-                    <!-- 排行榜具体内容 -->
-                    <div class="tab-content">
-                        <!-- 周榜单 -->
-                        <div class="tab-pane active in" id="weeklyPicks">
-                          <div class="sidebar-topPick-block">
-                            <h4>
-                              <a href=#>
-                              <i class="fa fa-star"></i>  ES通关的NB方法</a>
-                            </h4>
-                            <p class="side-bar-topPick-description">
-                              所有公司的招聘过程都是从提交ES开始，通过这一关，我们才能得到机会向公司展现自己的实力。今天，我们就来谈一谈ES通关的方法，虽然不是绝对，但希望能帮助大家更快的进入到就职过程的下一个阶段.
-                            </p>
-                          </div>
-                        </div><!-- end of 周榜单 -->
-                        <!-- 月榜单 -->
-                        <div class="tab-pane fade" id="monthlyPicks">
-                          <div class="sidebar-topPick-block">
-                            <h4>
-                              <a href=#>
-                              <i class="fa fa-star"></i>  ES通关的NB方法</a>
-                            </h4>
-                            <p class="side-bar-topPick-description">
-                              所有公司的招聘过程都是从提交ES开始，通过这一关，我们才能得到机会向公司展现自己的实力。今天，我们就来谈一谈ES通关的方法，虽然不是绝对，但希望能帮助大家更快的进入到就职过程的下一个阶段.
-                            </p>
-                          </div>
-                          <div class="sidebar-topPick-block">
-                            <h4>
-                              <a href=#>
-                              <i class="fa fa-star"></i>如何在说明会上脱颖而出</a>
-                            </h4>
-                            <p class="side-bar-topPick-description">
-                              介绍的部分文字有限
-                            </p>
-                          </div>
-                        </div><!-- end of 月榜单 -->
-                        <!-- 总榜单 -->
-                        <div class="tab-pane active in" id="allPicks">
-                          <div class="sidebar-topPick-block">
-                            <h4>
-                              <a href=#>
-                              <i class="fa fa-star"></i>  ES通关的NB方法</a>
-                            </h4>
-                            <p class="side-bar-topPick-description">
-                              所有公司的招聘过程都是从提交ES开始，通过这一关，我们才能得到机会向公司展现自己的实力。今天，我们就来谈一谈ES通关的方法，虽然不是绝对，但希望能帮助大家更快的进入到就职过程的下一个阶段.
-                            </p>
-                          </div>
-                          <div class="sidebar-topPick-block">
-                            <h4>
-                              <a href=#>
-                              <i class="fa fa-star"></i>如何在说明会上脱颖而出</a>
-                            </h4>
-                            <p class="side-bar-topPick-description">
-                              介绍的部分文字有限
-                            </p>
-                          </div>
-                          <div class="sidebar-topPick-block">
-                            <h4 class="sidebar-topPick-title">
-                              <a href=#>
-                              <i class="fa fa-star"></i>【长文本】长文本长文本长文本长文本长文本长文本长文本长文本</a>
-                            </h4>
-                            <p class="side-bar-topPick-description">
-                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                              长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本
-                            </p>
-                          </div>
-                        </div><!-- end of 总榜单 -->
-                    </div><!-- end of 具体内容-tab -->
-                </div><!-- end of 5 Top Picks Articles with 3 Tabs -->
-
-            </div><!-- end of side-bar -->
-
-          </div>
+          </div><!-- col-md-12 -->
+          <!-- end of second row -->
+        </div>
 
     </div><!-- /.container -->
 
     <!-- Footer -->
     <footer class="footer-layout">
-        <div class="container footer-container-layout">
+        <!-- 注意！！！！！！ -->
+          <!-- 如果使用全屏模式: container-fluid, footer也需要相对应。否则会出现显示问题！！！  -->
+        <div class="container-fluid footer-container-layout">
             <div class="row">
                 <div class="col-md-7">
                     <div class="footer-links">
@@ -426,7 +433,7 @@
                         <p style="color:white">Copyright © 2012-2015 七联 All Rights Reserved.
                     </div>
                 </div>
-                <div class="col-md-4 col-md-offset-1">
+                <div class="col-md-3 col-md-offset-1">
                     <p style="color:white">关注七联，和我们一起震撼世界</p>
                     <a href="https://www.facebook.com/qilian" class="facebook-share"><i class="fa fa-facebook"></i></a>
                     <a href="http://weibo.com/naanren" class="weibo-share"><i class="fa fa-weibo"></i></a>
@@ -436,17 +443,6 @@
         </div>
     </footer>
     <!-- end of footer -->
-
-    <!-- Back to Top Button -->
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-8">
-          <p id="back-top">
-            <a href="#top" class="btn btn-success">Back to Top</a>
-          </p>
-        </div>
-      </div>
-    </div> -->
 
     <!-- jQuery -->
     <!-- 必须添加两个JS才可以！ -->
@@ -555,7 +551,7 @@
     <script>
       $(function(){
           $(".slogan").typed({
-              strings: ["有态度的资讯", "左右职业人生", "有态度的资讯, 左右职业人生"],
+              strings: ["与君初相识", "犹如旧人归", "每一次相遇都是久别重逢"],
               loop: true,
               showCursor: true,
               typeSpeed: 150
