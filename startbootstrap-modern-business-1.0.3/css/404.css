@@ -38,11 +38,12 @@
 
 /*标题图片的定义*/
 .header-banner{
-  background: url(../img/404_bg.jpg) no-repeat center;
+  background: url(http://qilian.jp/image/404_bgd.jpg) no-repeat center;
   background-size: cover;
-  padding-top: 15%;
-  padding-bottom: 20%;
+  padding-top: 20%;
+  padding-bottom: 25%;
   text-align: center;
+  margin-bottom: 5px;
 }
 .header-message {
   position: relative;
