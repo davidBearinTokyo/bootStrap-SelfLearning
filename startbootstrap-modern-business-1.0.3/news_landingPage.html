@@ -13,34 +13,18 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom Animate Css -->
-    <link rel="stylesheet" href="animate.css/animate.min.css">
-
-    <!-- Back to top Css -->
-    <!-- 这个部分要集合到blog-list里面 -->
-    <link rel="stylesheet" href="css/backToTop.css">
     <!-- news.css -->
-    <link rel="stylesheet" href="css/slideShow.css">
-
-    <!-- Footer -->
-    <link rel="stylesheet" href="css/footer.css">
-
-    <!-- Count-down CSS -->
-    <link href="countDown/flipclock.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/news.css">
     <!-- qilian-tab CSS -->
     <link href="css/qilian-tab.css" rel="stylesheet">
-
     <!-- flexslider CSS-->
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" />
-
+    <!-- Footer -->
+    <link rel="stylesheet" href="css/footer.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -142,22 +126,26 @@
         <div class="row">
           <div class="col-md-12 header-message">
             <h1>七联视界</h1>
-            <hr width="50%">
             <h3><span class="slogan">
               有态度的资讯 左右职业人生</span>
             </h3>
           </div>
           <!-- 搜索栏 + 进入文章 -->
-          <div class="col-md-4 col-md-offset-2">
-            <a href="" class="btn btn-success btn-block btn-round" style="border-radius:40px">阅读文章</a>
-            <a href="#news" class="btn btn-success btn-block btn-round" style="border-radius:40px">阅读文章</a>
+          <!-- Search bar  -->
+          <!-- 点击右侧的icon，跳转注册页面 -->
+          <div class="col-md-8 col-md-offset-2 search">
+            <div class="input-group input-group-lg">
+              <div class="input-group-btn">
+                  <button type="submit" class="btn btn-success"><span><i class="fa fa-search"></i></span></button>
+              </div>
+              <input id="search-input" type="text" class="form-control" placeholder="查看就职资讯, 选考情报, 活动信息..." id="query" name="queriesy" value="">
+               <div class="input-group-btn">
+                  <button type="submit" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" air-expaned="false"><i class="fa fa-group"></i> 加入七联</button>
+               </div>               
+            </div><!-- end of input-group -->
           </div>
-
-          <div class="col-md-4 ">
-            <a href="#news" class="btn btn-success btn-block btn-round" style="border-radius:40px">阅读文章</a>
-          </div>
-
-          <!-- <div class="down-arrow floating-arrow"><a href="#news"><i class="fa fa-angle-down"></i></a></div> -->
+          <!-- down-arrow <span><i class="fa fa-th-list"></i></span> -->
+          <div class="down-arrow floating-arrow"><a href="#news"><i class="fa fa-angle-down"></i></a></div>
         </div>
       </div>
     </div><!-- end of header -->
@@ -167,34 +155,40 @@
         <div class="row">
             <!-- Blog Entries Column -->
             <div class="col-md-8">
-
               <!-- Add slide-show for promotion -->
               <div class="col-md-12">
-                <div class="flexslider" style="margin:0;" >
-                  <ul class="slides">
-                    <li>
-                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/news_detail_news.jpg">
-                    </li>
-                    <li>
-                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/banner-newsPage.jpg">
-                    </li>
-                    <li>
-                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/news_detail_20150919.jpg">
-                    </li>
-                    <li>
-                      <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/appointment/img/original/news_detail_20151105_coverPage.jpg">
-                    </li>
-                  </ul>
+                <div class="flexslider" style="margin:0px">
+                    <ul class="slides"> 
+                      <li>
+                        <a href="http://qilian.jp/news/258">  
+                        <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://www.qilian.jp/image/news_detail_20151021_1.jpg">
+                        </a>
+                      </li>        
+                      <li>
+                        <a href="http://qilian.jp/news/306">  
+                        <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://www.qilian.jp/image/news-detail_20151228.jpg">
+                        </a>
+                      </li>      
+                      <li>
+                        <a href="http://qilian.jp/news/294">  
+                        <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://qilian.jp/image/news-detail_20151208.jpg">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://qilian.jp/news/198">  
+                        <img class="img-responsive img-hover event-cover-style" alt="Responsive image" src="http://www.qilian.jp/image/news-detail-image-20150821.jpg"></a>
+                      </li>
+                    </ul>
                 </div>
+
                 <!-- <a href="blog-post.html">
                 <img class="img-responsive img-hover event-cover-style" src="http://placehold.it/600X250" alt="">
               </a> -->
               </div>
 
-              <div class="col-md-11 news-1">
+              <div class="col-md-11">
                  <h4>
                    <a href="#"> 山王制药招聘</a>
-                   <span class="label label-danger animated infinite swing" style="display: inline-block;font-size:10px; margin-left:5px;margin-right: 5px;vertical-align: text-top;">NEW JOB</span>
                  </h4>
                 <a href="blog-post.html">
                     <img class="img-responsive img-hover img-thumbView" src="http://placehold.it/105X105" alt="">
@@ -218,7 +212,7 @@
                 </h6>
               </div><!--end of the job passage-->
 
-                  <div class="col-md-11 news-1">
+                  <div class="col-md-11">
                      <h4>
                      撰写【志望動機】的注意事项
                      </h4>
@@ -244,7 +238,7 @@
                     </div><!--end of the first passage-->
 
 
-                    <div class="col-md-11 news-1">
+                    <div class="col-md-11">
                       <h4><a href="#">【ES策划】ES通关的NB方法</a></h4>
                       <a href="blog-post.html">
                           <img class="img-responsive img-hover img-thumbView" src="http://placehold.it/105X105" alt="">
@@ -267,7 +261,7 @@
                       </h6>
                     </div><!--end of the first passage-->
 
-                    <div class="col-md-11 news-1">
+                    <div class="col-md-11">
                       <h4><a href="#">就职课程</a></h4>
                       <h6>
                         <ul class="icon-tools">
@@ -285,7 +279,7 @@
 
                     </div><!--用于课程-->
 
-                    <div class="col-md-11  news-1">
+                    <div class="col-md-11">
                       <h4><a href="#">如何在说明会上脱颖而出</a></h4>
                       <a href="blog-post.html">
                           <img class="img-responsive img-hover img-thumbView" src="http://placehold.it/105X105" alt="">
@@ -312,7 +306,7 @@
                         </a><!-- 用于活动 -->
                       </div>
 
-                    <div class="col-md-11 news-1">
+                    <div class="col-md-11">
                       <h4><a href="#">如何在说明会上脱颖而出</a></h4>
                           <img class="img-responsive img-hover img-thumbView" src="http://placehold.it/105X105" alt="">
                       <h6>
@@ -332,7 +326,7 @@
                       </h6>
                     </div><!--end of the first passage-->
 
-                    <div class="col-md-11 news-1">
+                    <div class="col-md-11">
                       <h4><a href="#">【ES策划】ES通关的NB方法</a></h4>
                       <a href="blog-post.html">
                           <img class="img-responsive img-hover img-thumbView" src="http://placehold.it/105X105" alt="">
@@ -531,16 +525,6 @@
     </footer>
     <!-- end of footer -->
 
-    <!-- Back to Top Button -->
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-8">
-          <p id="back-top">
-            <a href="#top" class="btn btn-success">Back to Top</a>
-          </p>
-        </div>
-      </div>
-    </div> -->
 
     <!-- jQuery -->
     <!-- 必须添加两个JS才可以！ -->
@@ -550,60 +534,6 @@
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <!-- COUNTDOWN -->
-    <script>
-      var countDown;
-      var nU = Math.floor( new Date().getTime() / 1000 ); // now-second
-      var sU = Math.floor( new Date("2015/10/18 18:00:00").getTime() / 1000 ); //after-second
-      $(document).ready(function() {
-        var clock;
-        var timeInMs = Date.now();
-        countDown = $('.countDown').FlipClock({
-              clockFace: 'DailyCounter',
-              autoStart: false,
-              callbacks: {
-                stop: function() {
-                  $('.message').html('The clock has stopped!')
-                }
-              }
-          });
-          countDown.setTime(sU-nU);
-          countDown.setCountdown(true);
-          countDown.start();
-
-      });
-    </script>
-
-    <!-- Back to top -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-
-    	// hide #back-top first
-    	$("#back-top").hide();
-
-    	// fade in #back-top
-    	$(function () {
-    		$(window).scroll(function () {
-
-        	if ($(this).scrollTop() > 100) {
-    				$('#back-top').fadeIn();
-    			} else {
-    				$('#back-top').fadeOut();
-    			}
-    		});
-
-    		// scroll body to 0px on click
-    		$('#back-top').click(function () {
-    			$('body,html').animate({
-    				scrollTop: 0
-    			}, 800);
-    			return false;
-    		});
-    	});
-
-    });
-    </script>
-
     <!-- FLexSlider -->
     <!-- REFERENCE: https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties-->
     <script src="js/jquery.js"></script>
@@ -619,8 +549,7 @@
         });
       });
     </script>
-
-    <!-- スムーズスクロール部分の記述 -->
+    <!-- smooth scroll -->
     <script>
     $(function(){
        // #で始まるアンカーをクリックした場合に処理
