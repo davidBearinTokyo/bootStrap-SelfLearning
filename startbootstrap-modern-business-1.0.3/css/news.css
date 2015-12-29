@@ -20,7 +20,7 @@
     background: url(../img/news_bgd.jpg) no-repeat center;
     background-color:#2980b9;
     background-size: cover;
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 25%;
     text-align: center;
     color:700px;
@@ -32,15 +32,11 @@
   /*标题文字*/
   .header-message > h1 {
     margin: 0;
-    font-size: 4.5em;
+    font-size: 6.0em;
+    font-weight: bolder;
     color: white;
   }
-  /*华丽的分割线*/
-  .header-message > hr{
-    width: 85%;
-    display:block;
-  }
-  /*华丽的分割线*/
+
   .header-message > h3{
     color: white;
     font-size: 25px;
@@ -91,7 +87,6 @@
       -webkit-transform: translate(-50%, 0);
               transform: translate(-50%, 0); } }
 
-
     /* 为type.js 添加光标效果 */
     .typed-cursor{
     opacity: 1;
@@ -114,7 +109,18 @@
       50% { opacity:0; }
       100% { opacity:1; }
     }
-
+    /* search bar */
+    .search{
+      margin-top: 100px;
+      opacity: 0.85;
+    }
+    #search-input{
+      padding-left: 23px;
+      padding-right: 43px;
+      font-size: 16px;
+      font-weight: bold;              
+    }
+    
 /* ====================================================================================================================
  *  main-sectoin setting
  * ====================================================================================================================*/
@@ -145,33 +151,35 @@
    font-size: 16px;
  }
   /*文章主题部分，占全部比例的8/12*/
-  .col-md-8{
+  #news .col-md-8{
     background-color: white;
     border-right: 1px solid #ecf0f1;
     border-left: 1px solid #ecf0f1;
     padding: 0px;
   }
   /* 图片占据整个空间，所以设定padding=0px */
-  .col-md-8 > .col-md-12{
+ #news .col-md-8 > .col-md-12{
     padding: 0px;
   }
   /* 网站主体*/
   /* 文章中显示发布时间的color */
-  .col-md-8 > .col-md-11 > h6{
+ #news .col-md-8 > .col-md-11 > h6{
     color: #bdc3c7;
   }
   /* 消息 */
-  .col-md-8 > .col-md-11{
-    padding:25px; /* 20px的目标是把event图片和文本之间的距离控制好 */
+ #news .col-md-8 > .col-md-11{
+    padding:25px; /* 25px的目标是把event图片和文本之间的距离控制好 */
     padding-bottom: 40px;
     border-bottom: 1px solid #ecf0f1;
-    }
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: transparent;
+  }
   /*左侧边栏显示颜色*/
-  .news-1:hover{
+  #news .col-md-8 > .col-md-11:hover{
     border-left-width: 3px;
     border-left-style: solid;
     border-left-color: #39d179;
-    padding-left:22px; /* 同样的padding距离保证font不会向右移动*/
   }
 
   /*文章的描述文字*/
