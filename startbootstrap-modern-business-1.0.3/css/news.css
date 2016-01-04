@@ -15,8 +15,8 @@
       background-color: #fafafa;
   }
 
-  /*标题图片的定义*/
-  .header-banner{
+  /*[NEWS]标题图片的定义*/
+  .header-banner-news{
     background: url(../img/news_bgd.jpg) no-repeat center;
     background-color:#2980b9;
     background-size: cover;
@@ -24,8 +24,22 @@
     padding-bottom: 25%;
     text-align: center;
     color:700px;
-    margin-bottom: 5px;
+    /* 标题图片与
+    margin-bottom: 50px; */
   }
+  /*[EVENTSs]标题图片的定义*/
+  .header-banner-events{
+    background: url(../img/events_bgd.jpg) no-repeat center;
+    background-color:#2980b9;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 25%;
+    text-align: center;
+    color:700px;
+    /* 标题图片与
+    margin-bottom: 50px; */
+  }
+
   .header-message {
     position: relative;
   }
@@ -130,6 +144,7 @@
    color: #bdc3c7;
    padding-right: 2px;
  }
+
  /* header部分的排版*/
  .page-header-layout-style{
    color: #34495e;
@@ -202,6 +217,7 @@
     padding-left: 0px;
   }
 
+
   /*定义tag 颜色*/
   .label-style{
       background-color: rgba(39, 174, 96, 0.7);
@@ -241,6 +257,19 @@
   }
   a::after{
     color:#1abc9c;
+  }
+
+
+
+/* ====================================================================================================================
+ *  main-sectoin setting
+ * ====================================================================================================================*/
+  
+  /*EVENT-DETAIL*/
+  /*events-detail左侧部分*/
+  #events-detail .btn-event_detail{
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   /* ====================================================================================================================

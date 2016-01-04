@@ -9,39 +9,24 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>七联 - 日本最大的留学生职业发展支援平台</title>
+    <title>Modern Business - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom Animate Css -->
-    <link rel="stylesheet" href="animate.css/animate.min.css">
-
-    <!-- Back to top Css -->
-    <!-- 这个部分要集合到blog-list里面 -->
-    <link rel="stylesheet" href="css/backToTop.css">
-
+    <!-- news.css -->
+    <link rel="stylesheet" href="css/news.css">
     <!-- events.css -->
     <link rel="stylesheet" href="css/events.css">
-
-    <!-- Footer -->
-    <link rel="stylesheet" href="css/footer.css">
-
-    <!-- Count-down CSS -->
-    <link href="countDown/flipclock.css" rel="stylesheet">
-
     <!-- qilian-tab CSS -->
     <link href="css/qilian-tab.css" rel="stylesheet">
-
     <!-- flexslider CSS-->
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" />
-
+    <!-- Footer -->
+    <link rel="stylesheet" href="css/footer.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -62,108 +47,73 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">QiLian</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
                     <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
+                        <a href="about.html">资讯</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="services.html">求人信息</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="active">
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="contact.html">博客</a>
                     </li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="btn btn-blue" href="/users/sign_in">登录</a>
+                    </li>
+                    <li><a class="btn btn-blue" href="/users/sign_up">注册</a>
+                    </li>
+                </ul>                
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
+    </nav><!-- end of navigation -->
 
     <!-- Page Header -->
-    <div class="header-banner">
+    <div class="header-banner-events">
       <div class="container">
         <div class="row">
           <div class="col-md-12 header-message">
-            <h1>七联・比邻</h1>
+            <h1>七比联邻</h1>
             <hr>
-            <h3>
-              <span class="slogan">
-                我们的征途是星辰大海，我们的世界从不狭隘
-              </span>
+            <h3><span class="slogan">
+              我们的征途是星辰大海，我们的世界从不狭隘</span>
             </h3>
           </div>
-          <div class="down-arrow floating-arrow"><a href="#news"><i class="fa fa-angle-down"></i></a></div>
+          <!-- 搜索栏 + 进入文章 -->
+          <!-- Search bar  -->
+          <!-- 点击右侧的icon，跳转注册页面 -->
+          <div class="col-md-8 col-md-offset-2 search">
+            <div class="input-group input-group-lg">
+              <div class="input-group-btn">
+                  <button type="submit" class="btn btn-success"><span><i class="fa fa-search"></i></span></button>
+              </div>
+              <input id="search-input" type="text" class="form-control" placeholder="查看就职资讯, 选考情报, 活动信息..." id="query" name="queriesy" value="">
+               <div class="input-group-btn">
+                  <button type="submit" class="btn btn-danger" data-toggle="dropdown" aria-haspopup="true" air-expaned="false"><i class="fa fa-group"></i> 加入七联</button>
+               </div>               
+            </div><!-- end of input-group -->
+          </div><!-- end of search-bar -->
+
+          <div class="down-arrow floating-arrow"><a href="#events"><i class="fa fa-angle-down"></i></a></div>
         </div>
       </div>
     </div><!-- end of header -->
 
     <!-- Page Content -->
-    <div class="container-fluid" id="news">
+    <div class="container-fluid" id="events">
         <div class="row">
             <!-- 只有第一排单独设定padding-top:100px, 为了不让nav-fix-top遮挡住第一排 -->
             <div class="col-md-12 board-row-style" style="padding-top:100px">
               <div class="col-md-3 col-sm-12">
                   <div class="panel panel-default">
                       <div class="panel-heading">
-                        <img src="http://www.qilian.jp/image/news_detail_waizixuanjiang.jpg" class="img-responsive">
+                        <img src="http://www.qilian.info/image/news_detail_waizixuanjiang.jpg" class="img-responsive">
                       </div>
                       <div class="panel-body events-board-color">
                           <div class="col-md-12">
@@ -245,7 +195,7 @@
               <div class="col-md-3 col-sm-12">
                   <div class="panel panel-default">
                       <div class="panel-heading">
-                        <img src="http://www.qilian.jp/image/news_detail_20151128_coverPage.jpg" class="img-responsive">
+                        <img src="http://www.qilian.info/image/news_detail_20151128_coverPage.jpg" class="img-responsive">
                       </div>
                       <div class="panel-body events-board-color">
                           <div class="col-md-12">
@@ -284,7 +234,7 @@
               <div class="col-md-3 col-sm-12">
                   <div class="panel panel-default">
                       <div class="panel-heading">
-                        <img src="http://qilian.jp/image/news_detail_news.jpg" class="img-responsive">
+                        <img src="http://qilian.info/image/news_detail_news.jpg" class="img-responsive">
                       </div>
                       <div class="panel-body events-board-color">
                           <div class="col-md-12">
@@ -332,7 +282,7 @@
               <div class="col-md-3 col-sm-12">
                   <div class="panel panel-default">
                       <div class="panel-heading">
-                        <img src="http://www.qilian.jp/image/news_detail_assetManagement_1.jpg" class="img-responsive">
+                        <img src="http://www.qilian.info/image/news_detail_assetManagement_1.jpg" class="img-responsive">
                       </div>
                       <div class="panel-body events-board-color">
                           <div class="col-md-12">
@@ -372,7 +322,7 @@
               <div class="col-md-3 col-sm-12">
                   <div class="panel panel-default">
                       <div class="panel-heading">
-                        <img src="http://www.qilian.jp/image/news_insider_20151114_insider.jpg" class="img-responsive">
+                        <img src="http://www.qilian.info/image/news_insider_20151114_insider.jpg" class="img-responsive">
                       </div>
                       <div class="panel-body events-board-color">
                           <div class="col-md-12">
@@ -426,9 +376,9 @@
                             <li><a href="#news"  class="footer-sitemap">回到上方</a></li>
                             <li><a href="#"  class="footer-sitemap">课程平台</a></li>
                             <li><a href="#"  class="footer-sitemap">求人情报</a></li>
-                            <li><a href="http://www.qilian.jp/news" class="footer-sitemap">七联视界</a></li>
-                            <li><a href="http://www.qilian.jp/about" class="footer-sitemap">关于我们</a></li>
-                            <li><a href="http://www.qilian.jp/blog" class="footer-sitemap">博客</a></li>
+                            <li><a href="http://www.qilian.info/news" class="footer-sitemap">七联视界</a></li>
+                            <li><a href="http://www.qilian.info/about" class="footer-sitemap">关于我们</a></li>
+                            <li><a href="http://www.qilian.info/blog" class="footer-sitemap">博客</a></li>
                         </ul>
                         <p style="color:white">Copyright © 2012-2015 七联 All Rights Reserved.
                     </div>
