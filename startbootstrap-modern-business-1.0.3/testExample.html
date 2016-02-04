@@ -20,6 +20,9 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="css/news.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -141,38 +144,39 @@
                 <p>Most of Start Bootstrap's unstyled templates can be directly integrated into the Modern Business template. You can view all of our unstyled templates on our website at <a href="http://startbootstrap.com/template-categories/unstyled">http://startbootstrap.com/template-categories/unstyled</a>.</p>
             </div>
 
-            <!-- the mouse over the elements, the passage change -->
-            <style>
 
-              .fa-bookmark{
-                color: #40d47e;
-              }
-
-              a:hover, a:visited, a:link, a:active
-              {
-                text-decoration: none;
-              }
-              .news-bookMark{
-                opacity: 0.5;
-              }
-
-              .news-bookMark-icon{
-                margin-right: 5px;
-              }
-
-              .news-bookMark:hover{
-                opacity: 1.0;
-              }
-              span.news-readingTime{
-                color: black;
-                opacity: 1.0;
-              }
-
-
-            </style>
-            <div class="col-lg-12">
-              <a href="#" class="news-bookMark" id="add-to-bookmMark"><i id="bookMark-icon-1" class="fa fa-bookmark news-bookMark-icon"></i><span class="news-readingTime" id="readingTime-1" >5分钟阅读</span></a>
+<!-- 情报搜集
+  就职情报
+  大环境分析
+人气专栏
+  娴谈专栏
+  肉包专栏
+ -->
+            <!-- Sidebar Design -->
+            <div class="col-md-4" id="card">
+                <ul class="mainmenu">
+                    <li>情报搜集</li>
+                        <ul class="submenu">
+                            <li>就职情报</li>
+                            <li>大环境分析</li>
+                        </ul>
+                    <li>人气专栏</li>
+                        <ul class="submenu">
+                            <li>娴谈专栏</li>
+                            <li>肉包专栏</li>
+                        </ul>
+                </ul>
             </div>
+
+
+
+
+
+
+
+
+
+
 
         </div>
         <!-- /.row
@@ -195,34 +199,8 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <script>
-    /* 当鼠标触碰到文字的时候，变成收藏的文字和标记*/
-    $( document ).ready(function() {
-      $('#readingTime-1').mouseover();
-      $('#readingTime-1').mouseout();
-      $('#add-to-bookmMark').click(function(){
-
-      $('#readingTime-1').html('已保存文章');
-      });
-    });
-
-    $('#readingTime-1').mouseover(function() {
-      $('#readingTime-1').html('收藏文章');
-    });
-    $('#readingTime-1').mouseout(function() {
-      $('#readingTime-1').html('5分钟阅读');
-    });
-
-    /*news-bookmMarked
-    $(document).ready(function(){
-
-    };
-    */
-    </script>
+    <script src="js/ql-tag.js"></script>
 
 </body>
 
