@@ -209,17 +209,12 @@
     margin-left:20px;
   }
 
-  /* news: tag分类，阅读数，发布时间*/ 
-  .news-icon-tools{
-    margin-top: 10px;
-    padding-bottom: 30px;
+  .icon-tools{
     position:relative;
     height: 15px;
     width: auto;
     list-style-type: none;
     padding-left: 0px;
-    line-height: 150%;
-    font-size: 12px;
   }
 
 
@@ -355,27 +350,21 @@
 /* ====================================================================================================================
  *  继续阅读，收藏（未完成）
  * ====================================================================================================================*/
-
-/*继续阅读定义*/
-.mark-continue_Reading{
+.continue_Reading{
+  /*继续阅读定义*/
   color: #57ad68;
   font-weight: lighter;
 }
-
-/* 会员限定Font-CSS*/
-.mark-news_member_only{
+.main-bookmark{
   margin-left: 10px;
-  color: #c0392b;
+  color: #7f8c8d;
 }
 
-/* 会员限定fo－awsome CSS*/
-.mark-news_member_only .fa-lock{
-  color: #e74c3c;
+.main-readingTime{
+  margin-left: 2px;
+  font-weight: normal;
 }
 
-<<<<<<< HEAD
-
-=======
 /* ====================================================================================================================
  *  TAG定义
  * ====================================================================================================================*/
@@ -469,4 +458,3 @@
 .sidebar-tag-submenu li a > span{
   float:right;
 }
->>>>>>> WEB-68_SideBar
