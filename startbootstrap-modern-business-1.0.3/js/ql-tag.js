@@ -1,12 +1,26 @@
-$(document).ready( function(){
-		// handlers
-	var $card = $('#card'),
-		$mainmenu = $card.find('.mainmenu'),
-		$submenu = $card.find('.submenu');
-		$submenu.hide();
-		console.log('method2!');
-		
-		$mainmenu.on('click', 'li', function(){
-		$(this).next('.submenu').slideToggle().siblings('.submenu').slideUp();
-		});
+$(function() {
+	var Accordion = function(el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+
+		// Variables privadas
+		var links = this.el.find('.sidebar-tag-link');
+		// Evento
+		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+	}
+
+	Accordion.prototype.dropdown = function(e) {
+		var $el = e.data.el;
+			$this = $(this),
+			$next = $this.next();
+
+		$next.slideToggle();
+		$this.parent().toggleClass('open');
+
+		if (!e.data.multiple) {
+			$el.find('.sidebar-tag-submenu').not($next).slideUp().parent().removeClass('open');
+		};
+	}	
+
+	var accordion = new Accordion($('#sidebar-tag'), false);
 });
