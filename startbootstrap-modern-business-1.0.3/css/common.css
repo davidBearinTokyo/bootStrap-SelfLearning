@@ -29,6 +29,7 @@ body{
 /*【课程页面】*/
 .header-banner-courses{
   background: url(../img/course-bg.jpg) no-repeat center;
+  background-attachment: fixed;
   background-color:#2980b9;
   background-size: cover;
   padding-top: 10%;
