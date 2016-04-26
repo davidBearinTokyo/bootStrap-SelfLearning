@@ -209,15 +209,30 @@ h4 a{
   margin-left:20px;
 }
 
-/* news: tag分类，阅读数，发布时间*/ 
+/* news: 阅读数，发布时间*/ 
 .news-icon-tools{
   margin-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  padding-left: 0px;
   position:relative;
   height: 15px;
   width: auto;
   list-style-type: none;
+  line-height: 150%;
+  font-size: 12px;
+}
+
+/* tag分类，*/
+.news-tags{
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   padding-left: 0px;
+  position:relative;
+  height: 15px;
+  width: auto;
+  list-style-type: none;
+  
   line-height: 150%;
   font-size: 12px;
 }
